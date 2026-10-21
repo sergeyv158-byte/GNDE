@@ -1,0 +1,12 @@
+/* Each photograph uses its full frame. Width varies with aspect ratio. */
+.gnde-photo-ribbon{--photo-height:190px;background:#071832;border-bottom:1px solid #2d4c67;padding:18px 0 12px;isolation:isolate}
+.gnde-photo-window{width:100%;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;direction:ltr}
+.gnde-photo-window::-webkit-scrollbar{display:none}
+.gnde-photo-track{display:flex;width:max-content;gap:0;align-items:center}
+.gnde-photo-ribbon .gnde-photo-strip{display:block;flex:none;height:var(--photo-height);width:auto;max-width:none;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.gnde-photo-controls{display:flex;align-items:center;justify-content:flex-end;gap:6px;max-width:1190px;margin:10px auto 0;padding:0 28px}
+.gnde-photo-controls[hidden]{display:none}
+.gnde-photo-controls button{border:1px solid #496982;background:#0b2646;color:#e9f1f7;border-radius:4px;padding:5px 11px;font:600 12px/1.5 "Segoe UI",Arial,sans-serif;cursor:pointer;min-height:32px}
+.gnde-photo-controls button:hover{border-color:#edcd75;color:#edcd75}
+.gnde-photo-controls button:focus-visible,.gnde-photo-window:focus-visible{outline:2px solid #edcd75;outline-offset:-2px}
+@media(max-width:680px){.gnde-photo-ribbon{--photo-height:150px;padding-top:12px}.gnde-photo-controls{padding:0 20px}.gnde-photo-controls button{min-height:40px;min-width:40px}}
