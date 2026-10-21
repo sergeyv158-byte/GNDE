@@ -3,6 +3,7 @@
   if (!root || root.dataset.initialized) return;
   const viewport = root.querySelector('.gnde-photo-window');
   const first = root.querySelector('.gnde-photo-strip');
+  const image = first.querySelector('img') || first;
   const controls = root.querySelector('.gnde-photo-controls');
   const toggle = controls.querySelector('[data-ribbon-action="toggle"]');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -75,10 +76,9 @@
   });
   document.addEventListener('visibilitychange', () => { lastTime = 0; });
   async function start() {
-    try { await first.decode(); }
+    try { await image.decode(); }
     catch { root.dataset.imageError = 'true'; return; }
     root.dataset.initialized = 'true';
-    root.dataset.photoCount = '17';
     controls.hidden = false;
     updateButton();
     measure();

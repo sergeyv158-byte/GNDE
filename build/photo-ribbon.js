@@ -1,8 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 
-// The four checked-in transport parts assemble into one optimized photo atlas.
-// All 17 photos retain their entire frame and their original aspect ratio.
+// Preserve the optimized source atlas. The displayed group ends at x=3977,
+// just before the final (plain tank) tile. All 16 retained photos stay whole.
 export function photoRibbonPlugin() {
   const image = Buffer.concat([1, 2, 3, 4].map((n) =>
     readFileSync(new URL(`../assets/photo-ribbon/strip.part${n}`, import.meta.url))));
@@ -10,13 +10,14 @@ export function photoRibbonPlugin() {
   if (createHash('sha256').update(image).digest('hex') !== expected) {
     throw new Error('Photo ribbon asset failed its integrity check.');
   }
+  const group = (duplicate) => `
+      <div class="gnde-photo-strip"${duplicate ? ' aria-hidden="true"' : ''}>
+        <img class="gnde-photo-atlas" src="/photo-ribbon.avif" width="4256" height="200" alt="${duplicate ? '' : 'Sixteen GNDE photographs: tank end inspection with guided-wave rings, pipe installations, sensor arrays, heat exchanger inspection, field testing, tank wall inspection, anchor monitoring, underwater inspection, wire rope monitoring, and probe products.'}" draggable="false">
+      </div>`;
   const markup = `
-<div class="gnde-photo-ribbon" id="inspection-photos" role="region" aria-label="GNDE inspection and sensor photographs">
+<div class="gnde-photo-ribbon" id="inspection-photos" role="region" aria-label="GNDE inspection and sensor photographs" data-photo-count="16">
   <div class="gnde-photo-window" tabindex="0" aria-label="Scrolling inspection photos. Use arrow keys or swipe to browse.">
-    <div class="gnde-photo-track">
-      <img class="gnde-photo-strip" src="/photo-ribbon.avif" width="4256" height="200" alt="" aria-hidden="true" draggable="false">
-      <img class="gnde-photo-strip" src="/photo-ribbon.avif" width="4256" height="200" alt="Seventeen GNDE photographs: tank end inspection, pipe installations, sensor arrays, heat exchanger inspection, field testing, tank wall inspection, anchor monitoring, underwater inspection, wire rope monitoring, and probe products." draggable="false">
-      <img class="gnde-photo-strip" src="/photo-ribbon.avif" width="4256" height="200" alt="" aria-hidden="true" draggable="false">
+    <div class="gnde-photo-track">${group(true)}${group(false)}${group(true)}
     </div>
   </div>
   <div class="gnde-photo-controls" hidden>
