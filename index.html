@@ -21,6 +21,20 @@ header{height:74px;background:#061427ed;position:sticky;top:0;z-index:10;border-
 .tech-block .tech-caption,.about-block .tech-caption{font-size:13px;color:#a9bfce;margin-top:9px}
 .tech-block .tech-reference{font-size:14px}
 .tech-reference a{color:#efc56a;text-decoration:underline;text-underline-offset:3px}
+#about{scroll-margin-top:74px}
+#about a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+#about a:hover{color:#fff}
+.patent-table-scroll{max-width:100%;overflow-x:auto;border:1px solid #35516b;border-radius:6px;margin-top:24px}
+.patent-table-scroll:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.patent-table{width:100%;min-width:740px;border-collapse:collapse;text-align:left;font-size:15px;line-height:1.6}
+.patent-table th,.patent-table td{padding:16px 18px;vertical-align:top;border-bottom:1px solid #35516b}
+.patent-table thead{background:#14314c;color:#fff}
+.patent-table thead th:first-child{width:16%}
+.patent-table thead th:nth-child(2){width:49%}
+.patent-table tbody th{font-weight:600;white-space:nowrap}
+.patent-table tbody td{color:#c8d9e5}
+.patent-table tbody tr:nth-child(even){background:#12304b66}
+.patent-table tbody tr:last-child th,.patent-table tbody tr:last-child td{border-bottom:0}
 @media(max-width:680px){.tech-media{height:210px}.tech-block,.about-block{padding:28px 0 30px}.tech-figure .evidence .frame{padding:10px}.tech-figure .evidence figcaption{padding:0 12px 14px}}
 </style><style>.hero-photo{display:block;width:100%;max-width:459px;height:auto;margin:0 auto;border-radius:5px}</style></head><body>
 <header><div class="wrap navbar">
@@ -77,14 +91,37 @@ header{height:74px;background:#061427ed;position:sticky;top:0;z-index:10;border-
 
 <section class="section" id="about"><div class="wrap">
 <h2>About Guided NDE LLC</h2>
-<div class="about-block"><h3>Advanced magnetostrictive sensor technology since 2008</h3>
-<p>Guided NDE LLC (GNDE) was founded in 2008 by Dr. Sergey A. Vinogradov. Since its establishment, GNDE has specialized in the design and manufacturing of advanced magnetostrictive transducers (MsT) for guided-wave nondestructive evaluation and structural health monitoring.</p>
-<p>The underlying technology has an earlier history: equipment deliveries by Southwest Research Institute (SwRI) began in 1999, while GNDE itself was established in 2008. Since then, GNDE has manufactured and delivered hundreds of thousands of dollars’ worth of specialized magnetostrictive sensors and related equipment to SwRI in support of research and industrial inspection applications.</p>
+<div class="about-block">
+<p>Guided NDE LLC (GNDE) was founded in 2008 by Dr. Sergey A. Vinogradov, <a href="https://patents.google.com/patent/US7821258B2/en">inventor</a> of patented magnetostrictive guided-wave transducer designs based on the reversed Wiedemann effect.</p>
+<p>Since its founding, GNDE has manufactured and supplied hundreds of thousands of dollars’ worth of specialized magnetostrictive sensors and related equipment to Southwest Research Institute (SwRI), supporting research and industrial inspection applications.</p>
+<p>GNDE provides solutions for demanding inspection applications requiring high-temperature operation, compact sensor designs, or high-power guided-wave excitation.</p>
 </div>
-<div class="about-block"><h3>Technology licensing and commercial expansion</h3>
-<p>In October 2026, GNDE entered into a non-exclusive, worldwide patent licensing agreement with SwRI covering specified magnetostrictive sensor technologies. The agreement enables GNDE to manufacture and commercialize products covered by the licensed patents, expanding access to specialized guided-wave sensors for industrial customers.</p>
-<p>GNDE’s focus includes sensor manufacturing, equipment delivery, and technical support for guided-wave inspection applications.</p>
-<p class="tech-caption">Review draft: public references to SwRI and licensing statements remain subject to applicable authorization and legal review.</p>
+<div class="about-block"><h3 id="licensed-patents">Licensed Patents</h3>
+<p>GNDE’s current commercial activities are based on magnetostrictive guided-wave technologies covered by U.S. patents licensed from Southwest Research Institute (SwRI). These licensed patents are listed below.</p>
+<div class="patent-table-scroll" role="region" aria-labelledby="licensed-patents" tabindex="0">
+<table class="patent-table" aria-labelledby="licensed-patents">
+<thead><tr><th scope="col">U.S. Patent</th><th scope="col">Title</th><th scope="col">Inventors</th></tr></thead>
+<tbody>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US7474092B1/en">7,474,092</a></th><td>Method and device for long-range guided-wave inspection of fire side of waterwall tubes in boilers</td><td>Hegeon Kwun<br>Hirotoshi Matsumoto<br>James F. Crane</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US7573261B1/en">7,573,261</a></th><td>Method and system for the generation of torsional guided waves using a ferromagnetic strip sensor</td><td>Sergey A. Vinogradov</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US7821258B2/en">7,821,258</a></th><td>Method and system for generating and receiving torsional guided waves in a structure</td><td>Sergey A. Vinogradov</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US7852073B2/en">7,852,073</a></th><td>Method and device for long-range torsional guided-wave inspection of piping with a partial excitation and detection around the pipe circumference</td><td>Hegeon Kwun<br>Hirotoshi Matsumoto<br>James F. Crane</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US8653810B2/en">8,653,810</a></th><td>Flexible magnetostrictive sensor</td><td>Adam C. Cobb<br>Jonathan D. Bartlett<br>Charles E. Duffer</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US8941287B2/en">8,941,287</a></th><td>Method and device for long-term monitoring of components using guided waves</td><td>Sergey A. Vinogradov<br>Hegeon Kwun<br>Glenn M. Light</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US9146215B2/en">9,146,215</a></th><td>Apparatus and method for inspection of tubes in a boiler</td><td>Hegeon Kwun<br>Matthew Capps<br>James Crane<br>Stanley M. Walker</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US9465011B2/en">9,465,011</a></th><td>Flexible magnetostrictive probe having sensor elements without permanent magnets</td><td>Sergey A. Vinogradov<br>Hegeon Kwun<br>Darryl L. Wagar</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US9500626B2/en">9,500,626</a></th><td>Methods and devices for long term structural health monitoring of pipelines and vessels</td><td>Sergey A. Vinogradov<br>Matthew L. Capps</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US9714922B2/en">9,714,922</a></th><td>Magnetostrictive probe with mechanical and fluid coupling for guided wave testing of tubular structures</td><td>Sergey A. Vinogradov<br>Charles E. Duffer<br>Glenn M. Light</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US10073066B2/en">10,073,066</a></th><td>Non-contact magnetostrictive sensor for guided wave monitoring of wire ropes or other solid ferrous objects without ferromagnetic coupling</td><td>Sergey A. Vinogradov<br>Glenn M. Light</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US10352909B2/en">10,352,909</a></th><td>Paired magnetostrictive transducers for non destructive testing of tubular structures with selective torsional or flexural wave modes</td><td>Sergey A. Vinogradov<br>Charles Duffer<br>Glenn M. Light</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US10466206B2/en">10,466,206</a></th><td>Non destructive magnetostrictive testing with unidirectional guided waves generated by ferromagnetic strip sensor</td><td>Sergey A. Vinogradov<br>Glenn M. Light<br>Charles E. Duffer</td></tr>
+<tr><th scope="row"><a href="https://patents.google.com/patent/US10739314B2/en">10,739,314</a></th><td>Omni-directional guided wave testing of plate structures using probe having rotating guided wave sensor</td><td>Sergey A. Vinogradov<br>Adam C. Cobb<br>Jonathan D. Bartlett<br>Greg A. Bustamante<br>Douglas R. Earnest<br>Clinton J. Thwing</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="about-block"><h3>Our Mission</h3>
+<p>Our mission is to deliver cost-effective magnetostrictive sensors and guided-wave inspection solutions to clients worldwide. Through scalable manufacturing and collaboration with customers and industry partners, we aim to make advanced nondestructive evaluation and structural health monitoring technologies more accessible for industrial use.</p>
 </div>
 </div></section>
 <section class="section" id="research"><div class="wrap"><p class="kicker">Scientific foundation</p><h2>Published theory and experimental evidence</h2><p class="intro">GNDE's technology builds on decades of research in magnetostriction, electromagnetic shear-wave generation and ultrasonic guided waves. Selected supporting papers:</p><div class="grid2 refs"><div class="card"><h3>Advanced MsT sensor designs</h3><p>Vinogradov, Cobb and Fisher (2018). <em>New Magnetostrictive Transducer Designs for Emerging Application Areas of NDE.</em> Materials 11(5), 755.</p><p><a href="https://doi.org/10.3390/ma11050755" target="_blank" rel="noopener">Read publication ↗</a></p></div><div class="card"><h3>Storage tank corrosion screening</h3><p>Vinogradov et al. (2026). <em>Screening of Corrosion in Storage Tank Walls and Bottoms Using an Array of Guided Wave Magnetostrictive Transducers.</em> Sensors 26(4), 1253.</p><p><a href="https://doi.org/10.3390/s26041253" target="_blank" rel="noopener">Read publication ↗</a></p></div></div></div></section>

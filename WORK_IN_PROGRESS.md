@@ -1,5 +1,20 @@
 # GNDE website — ribbon update and continuation notes
 
+## Approved About section — October 21, 2026 (America/Chicago)
+
+The owner approved the complete About copy and explicitly requested posting it to the existing GitHub review website. This update uses remote checkpoint `3b340e242fadd01c15669b79cd05cbfd4ef39b73` on `review-technology-about-2026-10-10`; its tracked file contents match the local animation checkpoint.
+
+- The active About section is in `index.html`. The older standalone `GNDE_2026_REVIEW.html` is not the Vite entrypoint.
+- Keep the founder credit factual and brief. The word **inventor** links to sole-inventor patent `US7821258B2`, and the technical term is **reversed Wiedemann effect**.
+- Retain the manufacturing and supply history since GNDE's founding, followed by applications requiring high-temperature operation, compact sensors, or high-power guided-wave excitation.
+- The licensing introduction ends exactly: **These licensed patents are listed below.** Do not add a phrase explaining that inventor names are included.
+- Preserve all 14 licensed patents with complete titles, inventor names, and patent links. The first patent is `US7474092B1`, not B2. Names and titles were checked against the patent records, and the set of patents against Schedule 1.
+- End with the mission: cost-effective solutions for clients worldwide, scalable manufacturing, and collaboration with customers and industry partners.
+- Omit "independent," professional superlatives, awards, and licensing terms. Do not imply that the founder currently manages GNDE.
+- The patent table scrolls within its own container on narrow screens. The hero image, photo ribbon, and enlarged animation are unaffected.
+- Review URL: https://gnde-git-review-technology-about-2026-10-10-guided-nde-llc.vercel.app/#about
+- Publishing scope remains the review branch. Consult this change's GitHub Vercel status for hosted deployment availability.
+
 ## Latest work — October 21, 2026 (America/Chicago)
 
 Resumed from verified GitHub checkpoint `8361cf950c0904112c812e7f33eb10d244a4d8d3` on `review-technology-about-2026-10-10`.
