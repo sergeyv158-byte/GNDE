@@ -178,8 +178,22 @@
       "height": 335,
       "bytes": 70335,
       "sha256": "7c7731a4a44e4fa99c096208643ec0323b2b663d028d26a879ba2a0db192e965",
-      "decision": "Exact supplied tank heat-map image is preserved in the repository. Final placement remains unresolved; this ribbon update does not replace the existing hero.",
-      "repository_path": "assets/source-images/tan.jpg"
+      "decision": "The owner explicitly requested this supplied tank heat-map image as one STATIC upper-right homepage picture above the ribbon, with no slideshow. New upload tan(1).jpg is byte-identical to the preserved original. The static hero is implemented and locally verified; hosted status is available on the resulting review-branch commit.",
+      "repository_path": "assets/source-images/tan.jpg",
+      "decision_history": [
+        {
+          "stage": "Historical ribbon-only update, before explicit hero instruction",
+          "decision": "Exact supplied tank heat-map image is preserved in the repository. Final placement remains unresolved; this ribbon update does not replace the existing hero."
+        }
+      ],
+      "upload_aliases": [
+        "tan(1).jpg"
+      ],
+      "website_repository_path": "public/hero-tank.jpg",
+      "served_path": "/hero-tank.jpg",
+      "placement": "Single static upper-right homepage hero image, above the scrolling photo ribbon.",
+      "slideshow": false,
+      "upload_alias_verification": "tan(1).jpg has the same 459x335 dimensions, 70335-byte size, and SHA-256 as assets/source-images/tan.jpg."
     },
     {
       "filename": "GNDE Guided Wave Sensors Homepage(2).png",
@@ -252,5 +266,22 @@
     },
     "placement": "Immediately after the homepage hero.",
     "verification": "Build succeeded; emitted bracelet bytes match the original. Browser QA and preview deployment status are recorded separately in WORK_IN_PROGRESS.md."
+  },
+  "hero_update": {
+    "base_commit": "6c009162fc6640b4dd195151f17c1ff944d72ab5",
+    "request": "Replace the upper-right homepage image above the ribbon with newly uploaded tan(1).jpg as a single static picture; remove the slideshow.",
+    "source_repository_path": "assets/source-images/tan.jpg",
+    "new_upload_alias": "tan(1).jpg",
+    "website_repository_path": "public/hero-tank.jpg",
+    "served_path": "/hero-tank.jpg",
+    "source_sha256": "7c7731a4a44e4fa99c096208643ec0323b2b663d028d26a879ba2a0db192e965",
+    "rendering": "One static image preserving full composition and aspect ratio.",
+    "slideshow": false,
+    "ribbon_changes": "None; preserve completed ribbon implementation.",
+    "publishing_scope": "Review branch and preview only; no production promotion or main merge.",
+    "validation_status": "Build passed; local browser screenshot confirms the supplied static image in the upper-right hero. No carousel markup or cycling timer remains. Source and built image bytes match the supplied original.",
+    "deployment_status": "Review-branch publication; check the resulting commit's GitHub Vercel status for hosted deployment outcome.",
+    "supersedes": "Historical unresolved placement of tan.jpg and instruction to preserve the previous hero slideshow.",
+    "visual_evidence": "docs/static-hero-preview-2026-10-21.jpg"
   }
 }

@@ -4,7 +4,19 @@
 
 Resumed from verified GitHub checkpoint `8361cf950c0904112c812e7f33eb10d244a4d8d3` on `review-technology-about-2026-10-10`.
 
-### Implemented and verified
+### Latest owner decision — one static upper-right hero image
+
+The owner has now explicitly requested replacing the upper-right homepage image **above the ribbon** with the newly supplied `tan(1).jpg`, displayed as **one static picture with no slideshow**. This resolves and supersedes the earlier uncertainty about the intended placement of `tan.jpg`; the historical instruction to preserve the slideshow below no longer describes the current request.
+
+- The saved ribbon baseline for this follow-up is commit `6c009162fc6640b4dd195151f17c1ff944d72ab5` on the same review branch.
+- `tan(1).jpg` is a new upload alias for the exact bytes already preserved as `assets/source-images/tan.jpg`: 459 x 335 pixels, 70,335 bytes, SHA-256 `7c7731a4a44e4fa99c096208643ec0323b2b663d028d26a879ba2a0db192e965`.
+- Website mapping for this edit: `public/hero-tank.jpg`, served as `/hero-tank.jpg`, using the exact original image bytes.
+- The requested implementation replaces the hero carousel with a single image and removes its slideshow markup, carousel styles, and cycling timer. Preserve the photograph's aspect ratio and full composition.
+- The completed scrolling ribbon below the hero remains unchanged, including its 16-photo selection, original bracelet replacement, 60px/second motion, sizing, and controls.
+- **Hero validation completed:** `npm run build` passed. The local browser preview loads the supplied tank image in the upper-right hero above the ribbon, and the full composition is retained. There is exactly one hero image, with no carousel markup or cycling timer. `public/hero-tank.jpg` and the built copy match the supplied original byte for byte. Visual evidence: `docs/static-hero-preview-2026-10-21.jpg`.
+- **Hosted status:** this change is published through the review branch; consult this commit's GitHub Vercel status for the deployment outcome. Local preview verification does not establish hosted availability.
+
+### Completed ribbon implementation and verification
 
 - The scrolling photo ribbon remains immediately below the homepage hero.
 - Its original 17-photo atlas is preserved unchanged. The display retains 16 photos because the owner previously removed the plain tank-end image without wave rings (tile 17). Do not restore it merely because the source strip is called the 17-picture ribbon.
@@ -22,14 +34,14 @@ Resumed from verified GitHub checkpoint `8361cf950c0904112c812e7f33eb10d244a4d8d
 
 - Repository: `sergeyv158-byte/GNDE`.
 - Review branch: `review-technology-about-2026-10-10`.
-- Review URL: https://gnde-git-review-technology-about-2026-10-10-guided-nde-llc.vercel.app/#inspection-photos
+- Review URL: https://gnde-git-review-technology-about-2026-10-10-guided-nde-llc.vercel.app/#home
 - Keep this work on the review branch. The user has authorized preview updates and GitHub saving, not merging to `main` or production promotion.
 - Vercel deployment is triggered by the GitHub branch update. Consult the resulting commit's GitHub status checks for hosted deployment status; the browser checks above were performed against the local development preview.
-- Preserve the existing hero/slideshow. `tan.jpg` is archived, but its intended replacement placement remains unresolved in the historical record. The current request is to finish the ribbon.
+- The current hero request is explicit: use the supplied tank image as one static upper-right picture above the ribbon and remove the slideshow. Keep this hero change and the completed ribbon on the review branch.
 
 ### Resume later
 
-Use the current branch head rather than the old checkpoint. Read `assets/photo-ribbon/README.md` for implementation geometry and `docs/IMAGE_SOURCES.json` for exact originals, replacements, and exclusions. The previous outstanding bracelet/speed fixes below are historical and have now been completed as described above.
+Use the current branch head rather than the old checkpoint. Read `assets/photo-ribbon/README.md` for implementation geometry and `docs/IMAGE_SOURCES.json` for exact originals, replacements, upload aliases, and exclusions. Static-hero build and local visual validation are complete; consult the current GitHub commit's Vercel status before reporting hosted deployment success. The previous outstanding bracelet/speed fixes below are historical and have now been completed as described above; the historical uncertainty about `tan.jpg` was resolved by the latest explicit owner request.
 
 ---
 

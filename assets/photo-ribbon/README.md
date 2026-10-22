@@ -20,7 +20,7 @@ The build injects the ribbon immediately below the existing homepage hero withou
 Three supplied originals are preserved with unchanged bytes under `assets/source-images/`:
 
 - `bracelet.jpg`: the active ribbon replacement.
-- `tan.jpg`: the supplied tank heat-map image, preserved for a later explicit placement decision.
+- `tan.jpg`: the supplied tank heat-map image, now also served as `/hero-tank.jpg` for the static upper-right homepage image above the ribbon. The later upload `tan(1).jpg` has identical bytes.
 - `GNDE_Guided_Wave_Sensors_Homepage_reference.png`: the original bytes of `GNDE Guided Wave Sensors Homepage(2).png`, retained as a layout reference under a filename without spaces.
 
 The other originals listed in `docs/IMAGE_SOURCES.json` have not been restored individually into this repository. Their historical backup is `GNDE_checkpoint_2026-10-21.zip/original-images/`, created during the prior session. That separate ZIP is not supplied by this checkout, and the inventory does not contain its image bytes. Preserve the distinction between these three repository originals, the optimized atlas, and the historical archive when resuming work.
