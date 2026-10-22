@@ -4,4 +4,5 @@ import { photoRibbonPlugin } from './build/photo-ribbon.js';
 
 export default defineConfig({
   plugins: [react(), photoRibbonPlugin()],
+  server: { allowedHosts: ['terminal.local'] },
 });

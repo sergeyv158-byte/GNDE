@@ -3,13 +3,13 @@
   if (!root || root.dataset.initialized) return;
   const viewport = root.querySelector('.gnde-photo-window');
   const first = root.querySelector('.gnde-photo-strip');
-  const image = first.querySelector('img') || first;
+  const images = [...first.querySelectorAll('img')];
   const controls = root.querySelector('.gnde-photo-controls');
   const toggle = controls.querySelector('[data-ribbon-action="toggle"]');
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let paused = motion.matches, hovering = false, focused = false;
   let groupWidth = 0, lastTime = 0, position = 0;
-  const speed = 30; // Pixels per second: decreasing scrollLeft moves photos right.
+  const speed = 60; // Twice the saved speed; decreasing scrollLeft moves photos right.
   function updateButton() {
     toggle.textContent = paused ? 'Play' : 'Pause';
     toggle.setAttribute('aria-pressed', String(paused));
@@ -76,7 +76,7 @@
   });
   document.addEventListener('visibilitychange', () => { lastTime = 0; });
   async function start() {
-    try { await image.decode(); }
+    try { await Promise.all(images.map((image) => image.decode())); }
     catch { root.dataset.imageError = 'true'; return; }
     root.dataset.initialized = 'true';
     controls.hidden = false;

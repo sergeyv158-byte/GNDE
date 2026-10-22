@@ -4,29 +4,253 @@
   "branch": "review-technology-about-2026-10-10",
   "inspected_commit": "a62e322cc1fe6c6c24af5fca37248b078d693055",
   "originals_in_git": false,
-  "originals_note": "Exact original image bytes are preserved separately in GNDE_checkpoint_2026-10-21.zip/original-images/. This inventory is not an assertion that originals were uploaded to GitHub. The optimized ribbon atlas is already tracked in GitHub.",
+  "originals_note": "Three exact uploaded originals are preserved under assets/source-images/: bracelet.jpg, tan.jpg, and GNDE_Guided_Wave_Sensors_Homepage_reference.png. The other 19 original files in this inventory have not been restored individually into the repository. Their historical backup is GNDE_checkpoint_2026-10-21.zip/original-images/, created in the prior session and separate from this checkout. The optimized 17-tile ribbon atlas remains tracked unchanged; it is not a full-resolution source archive.",
   "files": [
-    {"filename":"image_9f667e5b.jpg","width":1195,"height":896,"bytes":231155,"sha256":"dbd85d7d484c5e65fa16b9ac54b8193dc63e83382c1aa2ffbe25859a1794d9d8","original_atlas_position":1,"decision":"Keep tank end with guided-wave rings."},
-    {"filename":"7721fe9d-27ef-47bc-aa17-4eae730cd0e2.jpg","width":1920,"height":1440,"bytes":516152,"sha256":"74c4f3cbef2808fe4089ff35a51dd3ad042d4fa6676915601d1117e7f2b267e7","original_atlas_position":2,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"9s array.jpg","width":1536,"height":2048,"bytes":539667,"sha256":"78d4e3d09a2b8b4fc1de469d81c2fb0856fb12b61ae6e3f950bfc743be5e7d03","original_atlas_position":3,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"ht probe.jpg","width":1195,"height":896,"bytes":197603,"sha256":"630f26c52c943c2b2828be7fc80c200b3f32e794482885c020af194c19977094","original_atlas_position":4,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"hx-up.jpg","width":1340,"height":988,"bytes":541964,"sha256":"3c8281d01c1d2ce8eca1569ffbb01a9780cb3a1693635f029ffb622cb13c78ab","original_atlas_position":5,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"mst-field-setup.webp","width":900,"height":1200,"bytes":353158,"sha256":"355edce402821a8eab09d249066e339764823310c7e12710f06873aacb7d7965","original_atlas_position":6,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"tank4543.jpg","width":1512,"height":2016,"bytes":548554,"sha256":"f7db23069fe03444ec58e3ffc9e7fa85a18ca10bcbd7855fa8ee098ae4872d2f","original_atlas_position":7,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"IMG_1720(1).jpeg","width":1512,"height":2016,"bytes":1166123,"sha256":"5723d8aa912401cab561285f36473f01178f94b0d432174faa20a80268b03719","original_atlas_position":8,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"ChatGPT Image May 11, 2026, 01_40_06 PM.png","width":1067,"height":1474,"bytes":4418660,"sha256":"7ea632e4c0a4bf5805e8bab51c65859d3053d2241e07d9f2d94e91218d5009b4","original_atlas_position":9,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"water.jpg","width":962,"height":642,"bytes":219157,"sha256":"d83a500ae8cc7f84943be974ce6f9c8d5dcdae335ca69268f67a1130a772e845","original_atlas_position":10,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"Backup_of_reppic2.jpg","width":847,"height":776,"bytes":838871,"sha256":"05aec6ce003f6edc420f693a8e1c985a5bac2aa9c055c357ba27cd83a489e896","original_atlas_position":11,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"saw.jpg","width":532,"height":390,"bytes":75960,"sha256":"2e3b3b328518933fcfa5dbe0c48e42e20c139b8954d79d38355c97ead3a86d14","original_atlas_position":12,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"clamp-anchors.jpg","width":2016,"height":1512,"bytes":1044486,"sha256":"8e03ad6ab8cc5666060f7c6152b56bcf130385882aada2146380c9f1327acf0b","original_atlas_position":13,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"OMB03089 300.jpg","width":2048,"height":1151,"bytes":206859,"sha256":"b89877cb44a59446a1d699fe881a1f25123287dca4898862e268ffa1f58e9e38","original_atlas_position":14,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"OMB03128 300.jpg","width":2048,"height":1427,"bytes":309130,"sha256":"340116a585d05e7a409c9e122434692f9c1d000fa735e6432f659d225426e48d","original_atlas_position":15,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"1cb67e98-d2ab-470d-879a-e06b63fe3a61.jpg","width":1920,"height":1440,"bytes":521360,"sha256":"43e0b31fc02862338fa51847b53c0192dc8431c9129985725de417661fba3dab","original_atlas_position":16,"decision":"Retain as a ribbon source unless specifically replaced."},
-    {"filename":"4eb14cf6-4902-4148-8a64-039342f779bf.jpg","width":1920,"height":1440,"bytes":561230,"sha256":"c65dd64cfb0cd9e3be8b26eff5367967f7df7f45b884e96cfa7334ebc062f9ed","original_atlas_position":17,"decision":"Remove from displayed ribbon; retain source in archive. Plain storage-tank end without wave rings."},
-    {"filename":"bracelet.jpg","width":1358,"height":861,"bytes":267596,"sha256":"65ce53db155d3d9f0309ba82289c02c9ef026dabfad16965e888ef5bb552e73b","decision":"Preferred replacement for low-resolution brown-pipe/bracelet photo. Replacement is not yet saved in the inspected branch."},
-    {"filename":"tan.jpg","width":459,"height":335,"bytes":70335,"sha256":"7c7731a4a44e4fa99c096208643ec0323b2b663d028d26a879ba2a0db192e965","decision":"User-supplied tank heat-map image. Preserve; exact intended placement not explicit in transcript."},
-    {"filename":"GNDE Guided Wave Sensors Homepage(2).png","width":1672,"height":941,"bytes":2529876,"sha256":"eb7ee9c7c1e65eb8bfbb714f41f780e31fc8c377771f57a0df25d0b516cd5e05","decision":"Reference screenshot; direct bracelet.jpg is preferred for the replacement photograph."},
-    {"filename":"image(20261021-040614).png","width":234,"height":180,"bytes":42875,"sha256":"b46594cf731d77c47f624ce55d7ebada0b1bc5f7093338dbca3c0b7193dd62c6","decision":"Reference screenshot identifying the plain tank image to remove."},
-    {"filename":"image(20261021-040749).png","width":246,"height":183,"bytes":71434,"sha256":"ec4ed79e74cf63b5c865aeac0b3c31fcab962d21b3c8b57e2bbb382c5128ba47","decision":"Low-resolution reference screenshot identifying the brown-pipe/bracelet photo. Do not use as replacement source."}
-  ]
+    {
+      "filename": "image_9f667e5b.jpg",
+      "width": 1195,
+      "height": 896,
+      "bytes": 231155,
+      "sha256": "dbd85d7d484c5e65fa16b9ac54b8193dc63e83382c1aa2ffbe25859a1794d9d8",
+      "original_atlas_position": 1,
+      "decision": "Keep tank end with guided-wave rings."
+    },
+    {
+      "filename": "7721fe9d-27ef-47bc-aa17-4eae730cd0e2.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 516152,
+      "sha256": "74c4f3cbef2808fe4089ff35a51dd3ad042d4fa6676915601d1117e7f2b267e7",
+      "original_atlas_position": 2,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "9s array.jpg",
+      "width": 1536,
+      "height": 2048,
+      "bytes": 539667,
+      "sha256": "78d4e3d09a2b8b4fc1de469d81c2fb0856fb12b61ae6e3f950bfc743be5e7d03",
+      "original_atlas_position": 3,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "ht probe.jpg",
+      "width": 1195,
+      "height": 896,
+      "bytes": 197603,
+      "sha256": "630f26c52c943c2b2828be7fc80c200b3f32e794482885c020af194c19977094",
+      "original_atlas_position": 4,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "hx-up.jpg",
+      "width": 1340,
+      "height": 988,
+      "bytes": 541964,
+      "sha256": "3c8281d01c1d2ce8eca1569ffbb01a9780cb3a1693635f029ffb622cb13c78ab",
+      "original_atlas_position": 5,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "mst-field-setup.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 353158,
+      "sha256": "355edce402821a8eab09d249066e339764823310c7e12710f06873aacb7d7965",
+      "original_atlas_position": 6,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "tank4543.jpg",
+      "width": 1512,
+      "height": 2016,
+      "bytes": 548554,
+      "sha256": "f7db23069fe03444ec58e3ffc9e7fa85a18ca10bcbd7855fa8ee098ae4872d2f",
+      "original_atlas_position": 7,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "IMG_1720(1).jpeg",
+      "width": 1512,
+      "height": 2016,
+      "bytes": 1166123,
+      "sha256": "5723d8aa912401cab561285f36473f01178f94b0d432174faa20a80268b03719",
+      "original_atlas_position": 8,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "ChatGPT Image May 11, 2026, 01_40_06 PM.png",
+      "width": 1067,
+      "height": 1474,
+      "bytes": 4418660,
+      "sha256": "7ea632e4c0a4bf5805e8bab51c65859d3053d2241e07d9f2d94e91218d5009b4",
+      "original_atlas_position": 9,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "water.jpg",
+      "width": 962,
+      "height": 642,
+      "bytes": 219157,
+      "sha256": "d83a500ae8cc7f84943be974ce6f9c8d5dcdae335ca69268f67a1130a772e845",
+      "original_atlas_position": 10,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "Backup_of_reppic2.jpg",
+      "width": 847,
+      "height": 776,
+      "bytes": 838871,
+      "sha256": "05aec6ce003f6edc420f693a8e1c985a5bac2aa9c055c357ba27cd83a489e896",
+      "original_atlas_position": 11,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "saw.jpg",
+      "width": 532,
+      "height": 390,
+      "bytes": 75960,
+      "sha256": "2e3b3b328518933fcfa5dbe0c48e42e20c139b8954d79d38355c97ead3a86d14",
+      "original_atlas_position": 12,
+      "decision": "Historical atlas tile 12 is replaced in the displayed ribbon by the exact uploaded bracelet.jpg. Preserve the unchanged atlas and original-source inventory.",
+      "displayed": false,
+      "replacement_filename": "bracelet.jpg"
+    },
+    {
+      "filename": "clamp-anchors.jpg",
+      "width": 2016,
+      "height": 1512,
+      "bytes": 1044486,
+      "sha256": "8e03ad6ab8cc5666060f7c6152b56bcf130385882aada2146380c9f1327acf0b",
+      "original_atlas_position": 13,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "OMB03089 300.jpg",
+      "width": 2048,
+      "height": 1151,
+      "bytes": 206859,
+      "sha256": "b89877cb44a59446a1d699fe881a1f25123287dca4898862e268ffa1f58e9e38",
+      "original_atlas_position": 14,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "OMB03128 300.jpg",
+      "width": 2048,
+      "height": 1427,
+      "bytes": 309130,
+      "sha256": "340116a585d05e7a409c9e122434692f9c1d000fa735e6432f659d225426e48d",
+      "original_atlas_position": 15,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "1cb67e98-d2ab-470d-879a-e06b63fe3a61.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 521360,
+      "sha256": "43e0b31fc02862338fa51847b53c0192dc8431c9129985725de417661fba3dab",
+      "original_atlas_position": 16,
+      "decision": "Retain as a ribbon source unless specifically replaced."
+    },
+    {
+      "filename": "4eb14cf6-4902-4148-8a64-039342f779bf.jpg",
+      "width": 1920,
+      "height": 1440,
+      "bytes": 561230,
+      "sha256": "c65dd64cfb0cd9e3be8b26eff5367967f7df7f45b884e96cfa7334ebc062f9ed",
+      "original_atlas_position": 17,
+      "decision": "Remove from displayed ribbon; retain source in archive. Plain storage-tank end without wave rings."
+    },
+    {
+      "filename": "bracelet.jpg",
+      "width": 1358,
+      "height": 861,
+      "bytes": 267596,
+      "sha256": "65ce53db155d3d9f0309ba82289c02c9ef026dabfad16965e888ef5bb552e73b",
+      "decision": "Active standalone replacement for low-resolution brown-pipe/bracelet atlas tile 12 (saw.jpg). Exact original bytes are preserved and emitted unchanged; no screenshot crop or recompression is used.",
+      "repository_path": "assets/source-images/bracelet.jpg",
+      "displayed_ribbon_position": 12,
+      "served_path": "/photo-ribbon-bracelet.jpg"
+    },
+    {
+      "filename": "tan.jpg",
+      "width": 459,
+      "height": 335,
+      "bytes": 70335,
+      "sha256": "7c7731a4a44e4fa99c096208643ec0323b2b663d028d26a879ba2a0db192e965",
+      "decision": "Exact supplied tank heat-map image is preserved in the repository. Final placement remains unresolved; this ribbon update does not replace the existing hero.",
+      "repository_path": "assets/source-images/tan.jpg"
+    },
+    {
+      "filename": "GNDE Guided Wave Sensors Homepage(2).png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2529876,
+      "sha256": "eb7ee9c7c1e65eb8bfbb714f41f780e31fc8c377771f57a0df25d0b516cd5e05",
+      "decision": "Exact reference screenshot bytes are preserved under a filename without spaces. Direct bracelet.jpg is used for the ribbon photograph.",
+      "repository_path": "assets/source-images/GNDE_Guided_Wave_Sensors_Homepage_reference.png"
+    },
+    {
+      "filename": "image(20261021-040614).png",
+      "width": 234,
+      "height": 180,
+      "bytes": 42875,
+      "sha256": "b46594cf731d77c47f624ce55d7ebada0b1bc5f7093338dbca3c0b7193dd62c6",
+      "decision": "Reference screenshot identifying the plain tank image to remove."
+    },
+    {
+      "filename": "image(20261021-040749).png",
+      "width": 246,
+      "height": 183,
+      "bytes": 71434,
+      "sha256": "ec4ed79e74cf63b5c865aeac0b3c31fcab962d21b3c8b57e2bbb382c5128ba47",
+      "decision": "Low-resolution reference screenshot identifying the brown-pipe/bracelet photo. Do not use as replacement source."
+    }
+  ],
+  "repository_original_count": 3,
+  "originals_in_git_scope": "False means the complete 22-original inventory is not in Git; the three repository paths recorded below are included with this update.",
+  "implementation_base_commit": "8361cf950c0904112c812e7f33eb10d244a4d8d3",
+  "ribbon_implementation": {
+    "source_atlas_photo_count": 17,
+    "displayed_photo_count": 16,
+    "excluded_original_atlas_positions": [
+      17
+    ],
+    "replacement_original_atlas_position": 12,
+    "replacement_original_filename": "saw.jpg",
+    "replacement_repository_path": "assets/source-images/bracelet.jpg",
+    "replacement_served_path": "/photo-ribbon-bracelet.jpg",
+    "original_atlas_image_x_range_exclusive": [
+      2467,
+      2740
+    ],
+    "original_atlas_image_and_gap_x_range_exclusive": [
+      2467,
+      2752
+    ],
+    "retained_atlas_x_ranges_exclusive": [
+      [
+        0,
+        2467
+      ],
+      [
+        2752,
+        3977
+      ]
+    ],
+    "scroll_direction": "left-to-right",
+    "scroll_speed_css_pixels_per_second": 60,
+    "photo_height_css_pixels": {
+      "desktop": 168,
+      "mobile": 136,
+      "mobile_breakpoint": 680
+    },
+    "outer_max_width_css_pixels": 1190,
+    "horizontal_gutter_css_pixels": {
+      "desktop": 28,
+      "mobile": 20
+    },
+    "placement": "Immediately after the homepage hero.",
+    "verification": "Build succeeded; emitted bracelet bytes match the original. Browser QA and preview deployment status are recorded separately in WORK_IN_PROGRESS.md."
+  }
 }

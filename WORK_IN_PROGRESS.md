@@ -1,4 +1,39 @@
-# GNDE website — saved work and continuation notes
+# GNDE website — ribbon update and continuation notes
+
+## Latest work — October 21, 2026 (America/Chicago)
+
+Resumed from verified GitHub checkpoint `8361cf950c0904112c812e7f33eb10d244a4d8d3` on `review-technology-about-2026-10-10`.
+
+### Implemented and verified
+
+- The scrolling photo ribbon remains immediately below the homepage hero.
+- Its original 17-photo atlas is preserved unchanged. The display retains 16 photos because the owner previously removed the plain tank-end image without wave rings (tile 17). Do not restore it merely because the source strip is called the 17-picture ribbon.
+- The blurry brown-pipe/black-bracelet image was tile 12 (`saw.jpg`). It is now replaced in all three loop groups by the exact uploaded `bracelet.jpg` (1358 x 861), served separately as `/photo-ribbon-bracelet.jpg`. No resizing, recompression, stretching, or screenshot extraction is applied to that file.
+- The atlas portions before and after the replacement are displayed without recompression; every retained photo remains proportional and complete. Coordinates and source provenance are in `assets/photo-ribbon/README.md` and `docs/IMAGE_SOURCES.json`.
+- Speed is 60 CSS pixels/second, twice the former 30, moving left to right. An actual browser measurement across a loop boundary was approximately 59.9 pixels/second. Pause/play and next-photo navigation were exercised successfully.
+- The strip is slimmer: 168px photo height on desktop, 136px at widths up to 680px. The 1190px outer maximum and existing 28px desktop / 20px mobile gutters align with the homepage content.
+- Desktop browser measurements confirmed identical ribbon/page content edges at x=107 and x=1241. A phone-width check confirmed identical edges at x=20 and x=355, with document width and scroll width both 375px (no horizontal page overflow).
+- The browser decoded the replacement at its full 1358 x 861 dimensions. All images loaded and controls were visible. Source-byte equality and the built JPEG's equality were checked.
+- `npm run build` completed successfully. The build validates SHA-256 hashes for the saved atlas and original bracelet photograph. No page application errors were observed; browser-extension metadata messages were unrelated to the website.
+- Three uploaded originals are now preserved in `assets/source-images/`: `bracelet.jpg`, `tan.jpg`, and `GNDE_Guided_Wave_Sensors_Homepage_reference.png`. All bytes match the uploaded originals. Other inventory originals have not been recovered from the historical separate ZIP; do not claim that all full-resolution originals are in GitHub.
+- `server.allowedHosts` now explicitly permits `terminal.local` for the managed development preview. This is a development-only Vite setting.
+
+### Review and publishing scope
+
+- Repository: `sergeyv158-byte/GNDE`.
+- Review branch: `review-technology-about-2026-10-10`.
+- Review URL: https://gnde-git-review-technology-about-2026-10-10-guided-nde-llc.vercel.app/#inspection-photos
+- Keep this work on the review branch. The user has authorized preview updates and GitHub saving, not merging to `main` or production promotion.
+- Vercel deployment is triggered by the GitHub branch update. Consult the resulting commit's GitHub status checks for hosted deployment status; the browser checks above were performed against the local development preview.
+- Preserve the existing hero/slideshow. `tan.jpg` is archived, but its intended replacement placement remains unresolved in the historical record. The current request is to finish the ribbon.
+
+### Resume later
+
+Use the current branch head rather than the old checkpoint. Read `assets/photo-ribbon/README.md` for implementation geometry and `docs/IMAGE_SOURCES.json` for exact originals, replacements, and exclusions. The previous outstanding bracelet/speed fixes below are historical and have now been completed as described above.
+
+---
+
+# Historical checkpoint — before the ribbon fixes
 
 Checkpoint: 2026-10-21 UTC, following the website review session that began on October 20 in America/Chicago.
 
