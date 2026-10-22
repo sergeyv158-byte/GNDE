@@ -1,0 +1,7 @@
+/* Preserve every pixel of the supplied animation; never crop or stretch it. */
+.feco-video{width:100%;max-width:900px;margin:22px 0 0;scroll-margin-top:100px}
+.feco-video h4{font-size:18px;line-height:1.4;margin:0 0 12px;color:var(--text,#e9f1f7)}
+.feco-video video{box-sizing:border-box;display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#fff;border:1px solid var(--line,#2d4c67);border-radius:8px}
+.feco-video .tech-caption{margin-top:12px;color:var(--muted,#afc2d0);font-size:13px;line-height:1.6}
+.feco-video video:focus-visible{outline:2px solid var(--gold,#edcd75);outline-offset:4px}
+@media(max-width:680px){.feco-video{scroll-margin-top:86px}}
