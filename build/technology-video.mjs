@@ -12,12 +12,15 @@ export function technologyVideoPlugin() {
     throw new Error('FeCo video integrity check failed. Restore the original transport parts.');
   }
   const fileName = 'feco-wave-propagation.mp4';
+  // The owner requested 2x drawing size inside the same player. The original
+  // remains intact; this derivative removes only the surrounding white margins.
+  const displayFileName = 'feco-wave-propagation-2x.mp4';
   const placeholder = '<div class="wiedemann-animation">\n<div class="media-slot tech-media"><div><strong>Guided-wave generation animation</strong><br>Coil 1 and Coil 2 excitation<br>Waves propagating outward from the central FeCo patch</div></div>\n<p class="tech-caption">Approved 15.6-second MP4 animation to be embedded here when its video file is available. The animation illustrates guided-wave propagation from the FeCo strip.</p>\n</div>';
   const player = `<figure class="wiedemann-animation feco-video" id="feco-wave-animation">
 <h4 id="feco-video-title">Guided-wave generation animation</h4>
 <video controls playsinline preload="metadata" width="1280" height="720" aria-labelledby="feco-video-title" aria-describedby="feco-video-caption">
-<source src="/${fileName}" type="video/mp4">
-Your browser cannot play this video. <a href="/${fileName}">Open the MP4 animation</a>.
+<source src="/${displayFileName}" type="video/mp4">
+Your browser cannot play this video. <a href="/${displayFileName}">Open the MP4 animation</a>.
 </video>
 <figcaption class="tech-caption" id="feco-video-caption">Coil excitation and guided-wave propagation from the central FeCo strip. Silent, 15.6-second animation; use the controls to play, pause, seek, or view fullscreen.</figcaption>
 </figure>`;

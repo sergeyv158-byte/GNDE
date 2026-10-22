@@ -1,4 +1,4 @@
-/* Preserve every pixel of the supplied animation; never crop or stretch it. */
+/* Fit the 2x reframed animation without resizing the player or its controls. */
 .feco-video{width:100%;max-width:900px;margin:22px 0 0;scroll-margin-top:100px}
 .feco-video h4{font-size:18px;line-height:1.4;margin:0 0 12px;color:var(--text,#e9f1f7)}
 .feco-video video{box-sizing:border-box;display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#fff;border:1px solid var(--line,#2d4c67);border-radius:8px}
