@@ -33,6 +33,10 @@ Your browser cannot play this video. <a href="/${displayFileName}">Open the MP4 
         // The approved page now embeds the video directly; keep that markup
         // and point it to the verified MP4 emitted below.
         if (html.includes('<div class="wiedemann-animation">') &&
+            html.includes('/feco-wave-propagation-3x.mp4')) {
+          return html;
+        }
+        if (html.includes('<div class="wiedemann-animation">') &&
             html.includes('/feco-wave-propagation-2x.mp4')) {
           return html.replace('/feco-wave-propagation-2x.mp4', '/feco-wave-propagation.mp4');
         }
