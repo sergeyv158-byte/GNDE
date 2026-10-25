@@ -15,6 +15,7 @@ export function photoRibbonPlugin() {
       '65ce53db155d3d9f0309ba82289c02c9ef026dabfad16965e888ef5bb552e73b') {
     throw new Error('Original bracelet photograph failed its integrity check.');
   }
+  const newProbe = readFileSync(new URL('../OMB03096 300.jpg', import.meta.url));
   // Atlas coordinates include each complete retained photograph and its gap.
   // 0..2467: photos 1-11; 2467..2752: old photo 12; 2752..3977: photos 13-16.
   const segment = (start, width, alt) => `
@@ -28,9 +29,15 @@ export function photoRibbonPlugin() {
           <img class="gnde-photo-original" src="/photo-ribbon-bracelet.jpg" width="1358" height="861" alt="${duplicate ? '' : 'Black magnetostrictive sensor bracelet on a brown pipe, with the inspection instrument beside it.'}" draggable="false">
         </div>
         ${segment(2752, 1225, duplicate ? '' : 'GNDE clamp sensors, probe products, and field inspection equipment.')}
+        <div class="gnde-photo-frame">
+          <img class="gnde-photo-original" src="/photo-ribbon-new-probe.jpg" width="1937" height="1296" alt="${duplicate ? '' : 'Magnetostrictive sensor probe assembly and mounting hardware.'}" draggable="false">
+        </div>
+        <div class="gnde-photo-frame">
+          <img class="gnde-photo-original" src="/D026693-magnetostrictive-sensor-reflectometer-02.jpg" alt="${duplicate ? '' : 'Magnetostrictive guided-wave inspection instrument with laptop.'}" draggable="false">
+        </div>
       </div>`;
   const markup = `
-<div class="gnde-photo-ribbon" id="inspection-photos" role="region" aria-label="GNDE inspection and sensor photographs" data-photo-count="16">
+<div class="gnde-photo-ribbon" id="inspection-photos" role="region" aria-label="GNDE inspection and sensor photographs" data-photo-count="18">
   <div class="gnde-photo-window" tabindex="0" aria-label="Scrolling inspection photos. Use arrow keys or swipe to browse.">
     <div class="gnde-photo-track">${group(true)}${group(false)}${group(true)}
     </div>
@@ -61,6 +68,7 @@ export function photoRibbonPlugin() {
     generateBundle() {
       this.emitFile({ type: 'asset', fileName: 'photo-ribbon.avif', source: image });
       this.emitFile({ type: 'asset', fileName: 'photo-ribbon-bracelet.jpg', source: bracelet });
+      this.emitFile({ type: 'asset', fileName: 'photo-ribbon-new-probe.jpg', source: newProbe });
     },
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
@@ -68,6 +76,10 @@ export function photoRibbonPlugin() {
         if (path === '/photo-ribbon.avif') {
           res.setHeader('Content-Type', 'image/avif');
           return res.end(image);
+        }
+        if (path === '/photo-ribbon-new-probe.jpg') {
+          res.setHeader('Content-Type', 'image/jpeg');
+          return res.end(newProbe);
         }
         if (path === '/photo-ribbon-bracelet.jpg') {
           res.setHeader('Content-Type', 'image/jpeg');
