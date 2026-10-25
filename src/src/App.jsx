@@ -46,6 +46,7 @@ export default function GuidedNDEWebsite() {
       title: "Tank Floor Corrosion Screening",
       text: "SH0 guided wave arrays used to screen large tank bottom areas without taking tanks out of service.",
       url: "/case-tank-floor-corrosion",
+      publicationUrl: "https://www.mti-global.org/blogs/mti-forum/2024/05/30/corrosion-mapping-in-storage-tank-bottoms",
     },
     {
       title: "Buried Monopole Inspection",
@@ -384,14 +385,17 @@ export default function GuidedNDEWebsite() {
 
             <div className="grid md:grid-cols-3 gap-6 mt-10">
               {caseStudies.map((c) => (
-                <a
-                  key={c.title}
-                  href={c.url}
-                  className="border border-white/10 rounded-xl p-6 bg-white/5 hover:bg-white/10 transition block"
-                >
-                  <h3 className="font-medium">{c.title}</h3>
-                  <p className="text-sm text-slate-400 mt-2">{c.text}</p>
-                </a>
+                <div key={c.title} className="border border-white/10 rounded-xl p-6 bg-white/5 hover:bg-white/10 transition">
+                  <a href={c.url} className="block">
+                    <h3 className="font-medium">{c.title}</h3>
+                    <p className="text-sm text-slate-400 mt-2">{c.text}</p>
+                  </a>
+                  {c.publicationUrl && (
+                    <a href={c.publicationUrl} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm text-cyan-300 underline">
+                      Read the original MTI publication (2024)
+                    </a>
+                  )}
+                </div>
               ))}
             </div>
           </div>
