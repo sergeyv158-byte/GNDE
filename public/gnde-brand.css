@@ -1,0 +1,51 @@
+/* Shared GNDE identity, matching the established homepage logo. */
+.gnde-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  max-width: 100%;
+  flex-shrink: 0;
+  color: #fff;
+  font: 400 16px/1.65 "Segoe UI", Arial, sans-serif;
+  text-decoration: none;
+}
+.gnde-brand:hover { color: #fff; text-decoration: none; }
+.gnde-brand:focus-visible { outline: 2px solid #f88347; outline-offset: 4px; }
+.gnde-brand svg {
+  display: block;
+  width: 92px;
+  height: 64px;
+  flex-shrink: 0;
+}
+.gnde-brand-text {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  line-height: 1.1;
+}
+.gnde-brand-text strong {
+  color: #fff;
+  font: 700 20px/1.1 "Segoe UI", Arial, sans-serif;
+  letter-spacing: .35px;
+}
+.gnde-brand-text small {
+  display: block;
+  margin: 4px 0 0;
+  padding: 0;
+  color: #edcd75;
+  font: 400 11px/1.1 "Segoe UI", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+.gnde-case-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+}
+.gnde-case-header .gnde-header-back { font-size: 15px; }
+@media (max-width: 680px) {
+  .gnde-brand svg { width: 68px; height: 50px; }
+  .gnde-brand-text strong { font-size: 17px; }
+}
