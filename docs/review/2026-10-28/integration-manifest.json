@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-28",
+  "source_branch": "review-pulser-receiver-approved-2026-10-26",
+  "source_commit": "d1f5413db6001c21481e6ad9c1effb9d3a8fb2bc",
+  "pages": [
+    {
+      "path": "public/products.html",
+      "source": "GNDE_Review_Probe6_16in_Aperture_Oct28.html",
+      "sections": [
+        "pipeline",
+        "tanks",
+        "buried",
+        "heat",
+        "instruments"
+      ]
+    },
+    {
+      "path": "public/pipelines.html",
+      "source": "GNDE_Review_Probe6_16in_Aperture_Oct28.html",
+      "section": "pipeline"
+    },
+    {
+      "path": "public/storage-tanks.html",
+      "source": "GNDE_Review_Probe6_16in_Aperture_Oct28.html",
+      "section": "tanks"
+    },
+    {
+      "path": "public/buried-monopoles-anchors.html",
+      "source": "GNDE_Review_Probe6_16in_Aperture_Oct28.html",
+      "section": "buried"
+    },
+    {
+      "path": "public/heat-exchangers.html",
+      "source": "GNDE_Review_Probe6_16in_Aperture_Oct28.html",
+      "section": "heat"
+    },
+    {
+      "path": "public/instruments.html",
+      "source": "GNDE_Instrument_Specifications_Updated_2026-10-27.html",
+      "sections": [
+        "spec-mssrv5",
+        "spec-mssrv5m"
+      ]
+    },
+    {
+      "path": "public/case-study-buried-monopoles.html",
+      "source": "GNDE_monopole_case_study_review.zip"
+    },
+    {
+      "path": "public/case-study-buried-anchor-rods.html",
+      "source": "existing review branch"
+    },
+    {
+      "path": "public/case-study-boiler-pipes.html",
+      "source": "existing review branch"
+    },
+    {
+      "path": "public/case-study-steel-rope.html",
+      "source": "existing review branch"
+    },
+    {
+      "path": "public/structural-health-monitoring.html",
+      "source": "GNDE_SHM_Reordered_Preview_Oct28.html",
+      "sections": [
+        "aboveground-buried-pipes",
+        "elevated-temperature-pipes",
+        "pressure-vessels"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "public/media/applications/probes-pipeline-01-e553ddded8.webp",
+      "sha256": "e553ddded826565e77fa207644de2215b6444ac2d2f0717219f0a3d9bf64da6f",
+      "bytes": 65832,
+      "alt": "8-Segment MsT Probes"
+    },
+    {
+      "path": "public/media/applications/probes-pipeline-02-4dfb789616.webp",
+      "sha256": "4dfb78961635ad95829e1cc0ff59f85e478d54ddec649a16941b22bd96e42d27",
+      "bytes": 453670,
+      "alt": "Labeled nine-segment bracelet probe wrapped around pipe and flat 8 by 8 MsT array probe"
+    },
+    {
+      "path": "public/media/applications/probes-pipeline-03-789a1c2f41.webp",
+      "sha256": "789a1c2f417fea03d2bcc4b9ddd019f11c63380e5c19e78b0dcdd37fc8ae8b06",
+      "bytes": 62816,
+      "alt": "Low-Profile 8-Segment MsT Probes"
+    },
+    {
+      "path": "public/media/applications/probes-pipeline-04-a6db452b36.webp",
+      "sha256": "a6db452b36b733a716210151541670a2fbc1196cddd9a50400f082f819e0c9ab",
+      "bytes": 107088,
+      "alt": "11-Segment Bracelet MsT Probe"
+    },
+    {
+      "path": "public/media/applications/probes-pipeline-05-396efeec22.webp",
+      "sha256": "396efeec22e63ade48f83be5b146ec74cfda8236d82e4e841abe88a1e77c760e",
+      "bytes": 56590,
+      "alt": "9-Segment MsT Bracelet Probe"
+    },
+    {
+      "path": "public/media/applications/probes-pipeline-06-ae121a3091.webp",
+      "sha256": "ae121a30917b90a70c114116720ee957cb737d1d6a31e26c32e5558d992e5bba",
+      "bytes": 27306,
+      "alt": "9-Segment MsT Bracelet Probe \u2014 Partial Coverage"
+    },
+    {
+      "path": "public/media/applications/probes-pipeline-07-fbfae584d1.webp",
+      "sha256": "fbfae584d1eb49568130328cef125c4240e258ef98ba5afefe78d788556dd127",
+      "bytes": 109478,
+      "alt": "4-Segment Adjustable MsT Bracelet Probe \u2014 102 mm OD"
+    },
+    {
+      "path": "public/media/applications/probes-tanks-08-c0c96b3c92.webp",
+      "sha256": "c0c96b3c9227a16a7557729e168e8a9976917730979843efed2aba51f38241e4",
+      "bytes": 5068,
+      "alt": "8 \u00d7 8 MsT Array \u2014 Axial Tank Wall Scan"
+    },
+    {
+      "path": "public/media/applications/probes-tanks-09-4426edc943.webp",
+      "sha256": "4426edc943d27b32127aa84ccd9a9b55ad5fb6fba9861baac26e8711bc7aa804",
+      "bytes": 44258,
+      "alt": "8 \u00d7 8 MsT Array \u2014 Tank Bottom Inspection"
+    },
+    {
+      "path": "public/media/applications/probes-tanks-10-fb98327abc.webp",
+      "sha256": "fb98327abc91e2a223b7e40c9e929f91f692c55dec2407089d5f7fa928ec7fe1",
+      "bytes": 105080,
+      "alt": "MsT 360 \u2014 Omnidirectional Tank Wall Inspection"
+    },
+    {
+      "path": "public/media/applications/probes-buried-11-aaf13ee322.webp",
+      "sha256": "aaf13ee3221cb201415c3120c04bbd98b14e622ab8aa71933f76c6c5a5a6ef8b",
+      "bytes": 49228,
+      "alt": "Split-Ring MsT Probes \u2014 Small-Diameter Anchors"
+    },
+    {
+      "path": "public/media/applications/probes-buried-12-8064b8a83c.webp",
+      "sha256": "8064b8a83cca6de404a40d16a256e175c18a3db5774effd9a34038520975cbab",
+      "bytes": 53492,
+      "alt": "Split-Ring MsT Probes \u2014 Small-Diameter Anchors"
+    },
+    {
+      "path": "public/media/applications/probes-buried-13-45044df6a5.webp",
+      "sha256": "45044df6a5e2b03e9915e1b40907561226baab1091ffe6947b9e42400d96bc92",
+      "bytes": 114438,
+      "alt": "Adjustable Four-Segment MsT Bracelet Probe"
+    },
+    {
+      "path": "public/media/applications/probes-buried-14-6027ab575a.webp",
+      "sha256": "6027ab575af1f2eb9976be005fc6beaeef6b54b4c35f972e6ab2ef80ff46ed11",
+      "bytes": 61936,
+      "alt": "Four-Segment MsT Probe with Junction Box for Flat Anchors"
+    },
+    {
+      "path": "public/media/applications/probes-buried-15-7f7c2aca57.webp",
+      "sha256": "7f7c2aca57d8d674e609e73887ba68b4395410e6c85f128ece7fa84de25042c1",
+      "bytes": 32154,
+      "alt": "Single-Segment MsT Probe for Flat or H-Shaped Anchors"
+    },
+    {
+      "path": "public/media/applications/probes-buried-16-d67fe51994.png",
+      "sha256": "d67fe519943b9a4578be7ceef0c7572d20325b5de6497dfee6196223050f8d7f",
+      "bytes": 230545,
+      "alt": "Four-Segment MsT Probe with Junction Box for Flat Anchors"
+    },
+    {
+      "path": "public/media/applications/probes-heat-17-6a86d17808.webp",
+      "sha256": "6a86d178080ef216c766f49cda7ea99341559ea2036867daf8723aa8d90d802d",
+      "bytes": 51318,
+      "alt": "Dry-coupled symmetric transduction ID tube probes with replaceable expandable heads"
+    },
+    {
+      "path": "public/media/applications/probes-heat-18-83f1fb3139.jpg",
+      "sha256": "83f1fb31390d3edd525f72d73037ef9061b1f55ac27e38008ef2c1c9e0933dd3",
+      "bytes": 77446,
+      "alt": "Approved horizontal four-segment MsT TFM probe for 4-inch pipe ID inspection, pistol-grip handle pointing downward"
+    },
+    {
+      "path": "public/media/applications/probes-corrosion-mapping-technology-19-18d4106cc6.jpg",
+      "sha256": "18d4106cc667f5b5b250c34ad62efddf188b13033c4ebaff12799b995c151f73",
+      "bytes": 213231,
+      "alt": "Approved replacement image for corrosion mapping using array magnetostrictive sensors"
+    },
+    {
+      "path": "public/media/applications/probes-instruments-20-ca2a901ee4.webp",
+      "sha256": "ca2a901ee441b9eb3b9145a13d5ffec99b3316972117e4c499136b9d497929ad",
+      "bytes": 104930,
+      "alt": "MsSRv5 \u2014 cleaned photograph, no blue square"
+    },
+    {
+      "path": "public/media/applications/probes-instruments-21-b5dc8058a2.webp",
+      "sha256": "b5dc8058a29e285d3e532453594549f0324571019fe47f00176a95ba2f5f5d65",
+      "bytes": 56360,
+      "alt": "MsSRv5M \u2014 instrument photograph"
+    },
+    {
+      "path": "public/media/applications/instruments-spec-mssrv5-01-ca2a901ee4.webp",
+      "sha256": "ca2a901ee441b9eb3b9145a13d5ffec99b3316972117e4c499136b9d497929ad",
+      "bytes": 104930,
+      "alt": "Cleaned MsSRv5 product photograph in rugged protective case, without text overlays"
+    },
+    {
+      "path": "public/media/applications/instruments-spec-mssrv5m-02-d5d304f6c4.jpg",
+      "sha256": "d5d304f6c422e7a5bf62168b234e505fbdce3e8362144974d898f27bff3c121e",
+      "bytes": 296513,
+      "alt": "MsSRv5M instrument from first side showing laptop and front panel"
+    },
+    {
+      "path": "public/media/applications/instruments-spec-mssrv5m-03-cea34b4a5d.jpg",
+      "sha256": "cea34b4a5db1ed5f5df0a95e4296045f58c98423a7713106c1a647c8de87e2c0",
+      "bytes": 309531,
+      "alt": "MsSRv5M instrument from second side showing laptop and side panel"
+    },
+    {
+      "path": "public/media/monopole-case-study/figure-4.png",
+      "sha256": "1e8083c6dd2aadb583902e046c0051068423f64d374172006e5f9ba500571a9d",
+      "bytes": 1108725,
+      "alt": "ECNDT 2026 Figure 4: photograph of soil-line corrosion, TFM and B-scan panels"
+    },
+    {
+      "path": "public/media/monopole-case-study/figure-5.png",
+      "sha256": "84436f0c1fbbc61cb2facc0023ed39119d5f714c50967edac46c7b872da3fb2e",
+      "bytes": 1227985,
+      "alt": "ECNDT 2026 Figure 5: pole mounted near concrete interface and guided-wave measurements at 180 and 250 kHz"
+    },
+    {
+      "path": "public/media/shm/high-temperature-sensing-ring-and-clamp.jpg",
+      "sha256": "3c41cdbd1924751df720d25d55f718832f985b7cd4c950a4710ba7e4d3d04b93",
+      "bytes": 214251
+    },
+    {
+      "path": "public/media/shm/high-temperature-sensor-pipe-installation.jpg",
+      "sha256": "4b3b3245a6c181ad74a0787e7fcc280489587b92fd99edc7f39b0bee044f4b29",
+      "bytes": 250265
+    },
+    {
+      "path": "public/media/shm/permanent-rigid-mst-sensor.jpg",
+      "sha256": "972f418dccece04c18f09556100aee329b91b6b525efbe8633200f0bfd255d6b",
+      "bytes": 181888
+    },
+    {
+      "path": "public/media/shm/sensing-ring-pipe-installation.jpg",
+      "sha256": "9668c16ca9267e31298d96fa180764601f36299d0ad07800d098dc64e316e846",
+      "bytes": 131827
+    }
+  ]
+}

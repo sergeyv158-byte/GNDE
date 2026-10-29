@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<title>Pulser and Receiver Instruments | GNDE</title>
+<style>
+:root{--navy:#071832;--navy2:#0b2646;--orange:#f08b47;--gold:#edcd75;--text:#e9f1f7;--muted:#afc2d0;--line:#35516b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--text);font:16px/1.62 "Segoe UI",Arial,sans-serif}
+.wrap{max-width:1240px;margin:auto;padding:0 27px}
+header{padding:18px 0;border-bottom:1px solid var(--line);background:#061427}
+.brand{font-weight:800;font-size:22px;color:#fff}.brand .pulse{color:var(--orange);font-size:30px;vertical-align:middle;padding-right:14px}.brand small{font-size:12px;font-weight:500;margin-left:15px;color:var(--gold)}
+main{padding:42px 0 85px}
+.eyebrow{text-transform:uppercase;color:var(--orange);font-size:12px;letter-spacing:2px;font-weight:800}
+h1{font-size:clamp(29px,3.6vw,44px);margin:6px 0 12px;line-height:1.15}
+.summary{color:#c5d6e4;font-size:17px;max-width:940px;margin-bottom:27px}
+.pill{display:inline-block;border:1px solid #54738d;background:#10283f;padding:5px 11px;border-radius:4px;font-size:12px;color:#c6d7e3}
+.instrument{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(355px,0.94fr);gap:26px;align-items:start;margin-top:30px;padding:27px;background:#112e49;border:1px solid #35536d;border-radius:9px}
+.specs{min-width:0}
+.specs h2{font-size:25px;margin:0 0 13px;line-height:1.25}
+.specs h3{font-size:18px;margin:21px 0 7px;color:#fff}
+.specs p{margin:6px 0 11px;color:#d0deea}
+.specs ul{padding-left:24px;margin:7px 0 12px;color:#d3e0e8}
+.specs li{padding:3px 0}
+.photos{display:grid;gap:16px;align-content:start}
+.photo{margin:0;padding:12px;background:#fff;border-radius:6px;border:1px solid #91adbf}
+.photo img{width:100%;height:auto;display:block;object-fit:contain}
+.photo figcaption{color:#425869;font-size:13px;text-align:center;padding:7px 2px 0}
+.photo.rv5m img{max-height:308px}
+.photo.rv5 img{max-height:660px}
+.note{border-top:1px solid #3f5971;margin-top:24px;padding-top:13px;color:#b4c7d5;font-size:13px}
+footer{margin-top:35px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media(max-width:850px){.instrument{grid-template-columns:1fr}.photos{grid-template-columns:1fr 1fr}.photo.rv5 img{max-height:500px}}
+@media(max-width:570px){.photos{grid-template-columns:1fr}.wrap{padding:0 17px}.instrument{padding:18px}.brand small{display:block;margin-left:0}}
+</style><style>.brand{text-decoration:none}.instrument-nav{display:flex;gap:22px;flex-wrap:wrap;margin-top:14px}.instrument-nav a{color:#f5c097;text-decoration:none;font-weight:600}.instrument-nav a:hover{text-decoration:underline}.section-links{margin-bottom:24px}a:focus-visible{outline:3px solid #f08b47;outline-offset:4px}.instrument{scroll-margin-top:25px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style><meta name="description" content="Full MsSRv5 and MsSRv5M transmitter, receiver, and multiplexer specifications, with original equipment photographs."></head><body>
+<header><div class="wrap"><a class="brand" href="/" aria-label="GNDE home"><span class="pulse">〰</span>Guided NDE LLC <small>SINCE 2008</small></a><nav class="instrument-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/products.html">Applications &amp; Probes</a><a href="/structural-health-monitoring.html">SHM</a><a href="/#contact">Contact</a></nav></div></header>
+<main class="wrap">
+<nav class="instrument-nav section-links" aria-label="Instrument specifications"><a href="#spec-mssrv5">MsSRv5</a><a href="#spec-mssrv5m">MsSRv5M</a></nav><p class="eyebrow">GNDE Products · Inspection Electronics</p>
+<h1>Pulser and Receiver Instruments</h1>
+<p class="summary">Magnetostrictive guided-wave inspection electronics. Explore transmitter, receiver, and multiplexer specifications alongside the corresponding instrument photographs.</p>
+<section class="instrument" id="spec-mssrv5">
+<div class="specs">
+<h2>MsSRv5 — Fifth-Generation Pulser/Receiver</h2>
+<p>Dual-channel instrument for axially symmetric magnetostrictive transduction probes; no 16-channel multiplexer.</p>
+<h3>Transmitter</h3>
+<ul>
+<li>Two synchronous, differentially driven high-voltage burst outputs</li>
+<li>Square-wave excitation; 1–14 selectable cycles</li>
+<li>1–500 kHz operating frequency</li>
+<li>Maximum output voltage: 240 Vpp; output current: 40 A peak-to-peak</li>
+<li>Selectable output amplitude: 0, 25, 50, or 100%</li>
+<li>Pulse repetition rate: 1, 2, 4, 8, or 16 pulses/s</li>
+</ul>
+<h3>Receiver</h3>
+<ul>
+<li>Two high-voltage differential inputs; electronic ±90° phase shifting for directionality control</li>
+<li>Programmable gain: 0–80 dB in 1-dB steps; time-controlled gain: 0–80 dB linear ramp</li>
+<li>Eight 4-pole active filters: 16, 32, 45, 60, 90, 128, 180, and 250 kHz; other choices available</li>
+<li>Pulse-echo and pitch-catch modes</li>
+</ul>
+</div>
+<div class="photos">
+<figure class="photo rv5"><img alt="Cleaned MsSRv5 product photograph in rugged protective case, without text overlays" src="/media/applications/instruments-spec-mssrv5-01-ca2a901ee4.webp" loading="lazy" decoding="async"><figcaption>MsSRv5 — cleaned product photograph</figcaption></figure>
+</div>
+</section>
+<section class="instrument" id="spec-mssrv5m">
+<div class="specs">
+<h2>MsSRv5M — Sixth-Generation Pulser/Receiver</h2>
+<p>Instrument with 16-channel relay-type multiplexer for segmented magnetostrictive sensors and arrays.</p>
+<h3>Transmitter</h3>
+<ul>
+<li>Two synchronous, differentially driven high-voltage burst outputs; in-phase or ±90° phase displacement</li>
+<li>Square-wave excitation; 1–14 selectable cycles</li>
+<li>Frequency: 1–500 kHz</li>
+<li>Maximum output: 240 Vpp and 40 A peak-to-peak</li>
+<li>Output amplitude: 0, 25, 50, or 100%</li>
+<li>Pulse repetition rate: 1, 2, 4, 8, or 16 pulses/s</li>
+</ul>
+<h3>Receiver</h3>
+<ul>
+<li>Two differential inputs with phase adjustment for directionality</li>
+<li>Gain: 0–80 dB in 1-dB steps; time-controlled gain: 0–80 dB</li>
+<li>Eight selectable 4-pole active filters: 16, 32, 45, 60, 90, 128, 180, and 250 kHz</li>
+<li>Pulse-echo and pitch-catch modes</li>
+</ul>
+<h3>Multiplexer</h3>
+<p>16-channel relay-type multiplexer, configurable for transmitting and receiving across the 16 sensor channels.</p>
+</div>
+<div class="photos">
+<figure class="photo rv5m"><img alt="MsSRv5M instrument from first side showing laptop and front panel" src="/media/applications/instruments-spec-mssrv5m-02-d5d304f6c4.jpg" loading="lazy" decoding="async"><figcaption>MsSRv5M — view 1 (original photograph)</figcaption></figure>
+<figure class="photo rv5m"><img alt="MsSRv5M instrument from second side showing laptop and side panel" src="/media/applications/instruments-spec-mssrv5m-03-cea34b4a5d.jpg" loading="lazy" decoding="async"><figcaption>MsSRv5M — view 2 (original photograph)</figcaption></figure>
+</div>
+</section>
+<p class="note">Both instruments are designed and manufactured by Southwest Research Institute (SwRI).</p>
+<footer>Guided NDE LLC · Pulser and Receiver Instruments</footer>
+</main></body></html>
