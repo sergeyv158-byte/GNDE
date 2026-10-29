@@ -10,7 +10,7 @@ This review combines the existing website with the latest recovered application,
 - `/storage-tanks.html`: tank-wall and tank-bottom probes.
 - `/buried-monopoles-anchors.html`: six buried-asset probe configurations, including the 16-inch combined-aperture Probe 6.
 - `/heat-exchangers.html`: tubing and four-segment pipe-ID probes.
-- `/structural-health-monitoring.html`: permanent and elevated-temperature sensor configurations.
+- `/structural-health-monitoring.html`: permanent and elevated-temperature pipe sensors, plus omnidirectional pressure-vessel monitoring probes.
 - `/instruments.html`: full MsSRv5 and MsSRv5M specifications and three equipment photographs.
 - `/case-study-buried-monopoles.html`: the additional ECNDT 2026 study, with figure attribution and interpretation limits retained.
 
@@ -18,7 +18,7 @@ The three pre-existing case-study pages and legacy instrument URLs are also emit
 
 ## Preserved review qualifications
 
-- The Pressure Vessels subsection remains heading-only because no completed content was supplied.
+- The Pressure Vessels subsection now includes the owner's supplied tank-cap installation photograph, probe photograph, and dictated specifications.
 - The 0.780-inch heat-exchanger dimension is explicitly labeled as the specified probe-head fit.
 - SHM high-temperature operation remains specified as up to 300 °C in this source.
 
@@ -32,6 +32,12 @@ All served page headers now use the original homepage orange pulse waveform, “
 
 At the owner's request, small configuration/probe/figure numbers and Chapter labels have been removed from application galleries. The selected cards now use one singular “Case Study” button style, placed below their captions or descriptive text. Existing matching anchor-rod and buried-monopole studies are linked directly. Other selected buttons open a clearly marked content-pending dialog until their case studies are developed next. No inspection results were invented.
 
-Requested placements include the axial/circumferential pipeline card; all three tank configurations; both split-ring anchor photographs, the adjustable buried-pole bracelet, and the fourth flat-anchor card; both tubing figures; steel rope/cable; the rigid permanent SHM sensor; and both high-temperature SHM photographs. The Pressure Vessels button is intentionally deferred until that section is completed.
+Requested placements include the axial/circumferential pipeline card; all three tank configurations; both split-ring anchor photographs, the adjustable buried-pole bracelet, and the fourth flat-anchor card; both tubing figures; steel rope/cable; the rigid permanent SHM sensor; and both high-temperature SHM photographs. With the Pressure Vessels section now populated, its requested button is placed below the installation photograph's caption.
 
-Pending case topics: `pipeline-axial-circumferential`, `tank-wall-array`, `tank-bottom-array`, `tank-wall-mst360`, `flat-anchor-array`, `heat-exchanger-symmetric-probes`, `heat-exchanger-four-segment-tfm`, `steel-cable-rope`, `shm-permanent-sensor`, and `shm-elevated-temperature`.
+Pending case topics: `pipeline-axial-circumferential`, `tank-wall-array`, `tank-bottom-array`, `tank-wall-mst360`, `flat-anchor-array`, `heat-exchanger-symmetric-probes`, `heat-exchanger-four-segment-tfm`, `steel-cable-rope`, `shm-permanent-sensor`, `shm-elevated-temperature`, and `shm-pressure-vessels`.
+
+## Pressure-vessel content supplied during review
+
+The owner specified the mounted-probe tank-cap photograph on the left and the two-probe photograph on the right. Original image bytes are retained. The new copy records full cap/wall coverage with approximately 10 m (33 ft) total guided-wave penetration; solid-state permanent installation; clean omnidirectional SH0 waves; approximately 40 dB signal-to-noise ratio in pitch-catch operation; dense-array circumferential anomaly localization; and patent-pending technology. These are owner-supplied product statements, not independently verified test results.
+
+The larger probe is stated as 30–60 kHz. The owner dictated approximately 60–120 kHz for the smaller probe, which is the range used in the page copy. The smaller probe's original photograph label reads 70–120 kHz. This difference was flagged for review in conversation; the photograph was not altered. No brown editorial note was added to the public page.
