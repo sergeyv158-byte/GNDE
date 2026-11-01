@@ -1,0 +1,122 @@
+GNDE CASE STUDIES UPDATE — 31 OCTOBER 2026
+
+UPLOAD TARGET
+Repository: https://github.com/sergeyv158-byte/GNDE
+Branch: review-pulser-receiver-approved-2026-10-26
+Base commit: 4927ba262596bc8a0309975f109ca238ed106222
+
+This archive contains changed and new files for the existing website. It is
+an update package, not a standalone copy of the complete repository.
+
+HOW TO UPLOAD
+1. Extract this ZIP on your computer.
+2. Open the GNDE review branch in GitHub:
+   https://github.com/sergeyv158-byte/GNDE/tree/review-pulser-receiver-approved-2026-10-26
+3. At the repository root, choose Add file > Upload files.
+4. Drag the extracted index.html, case-study-buried-anchor-rods.html, and the
+   public folder into the upload area. Preserve the public folder and all
+   its subfolders. These files replace matching paths and add the new files.
+   The instructions file may be kept locally.
+5. Commit the upload to the review branch. Suggested message:
+   Update case-study organization, source references, and probe captions
+6. After Vercel builds that commit, open its new preview deployment.
+
+The package has not been uploaded to GitHub or deployed to Vercel.
+
+CHANGES INCLUDED
+- Case Studies follows the six application groups in Products.
+- Separate cases for pipelines, pipe supports, tank walls, tank bottoms,
+  buried monopoles, lighting poles, and buried anchor rods.
+- Group title: Buried Monopoles, Lighting Poles & Anchors.
+- Exactly one case-study link for each SHM application: fully rigid
+  permanent MsT sensor, elevated-temperature pipes, and pressure vessels.
+- Existing pipeline axial/circumferential link retained; a case-study link
+  added to the adjustable four-segment bracelet probe.
+- Left anchor probe: Split-Ring MsT Probes — Clamp-On Style; clearance
+  1.5 in (38.1 mm) between the rod and adjacent structure.
+- Right anchor probe: Split-Ring MsT Probe — Hose-Clamp Style; fits a
+  1 in (25.4 mm) clearance to the adjacent structure.
+- Product links open case-study pages, replacing generic placeholder dialogs.
+- Existing six pipeline photographs and steel-cable button removal retained.
+
+VERIFIED SOURCE MAP
+Pipeline inspection:
+  Sensors 2026, 26(4), 1253; section 7.1; pages 13–14; Figure 13 (page 14).
+Storage tank wall corrosion screening:
+  Same Sensors paper; section 7.2; pages 14–15; Figure 14 (page 15).
+  Additional long-range wall example: pages 6–7; Figure 7 (page 7).
+Storage tank bottom corrosion mapping:
+  Same Sensors paper; section 7.3; pages 15–17;
+  Figure 15 (page 16), Figure 16 (page 17).
+  DOI: https://doi.org/10.3390/s26041253
+
+Buried monopole inspection:
+  ECNDT 2026 paper 431; PDF pages 4–6; Figure 3 (PDF page 5).
+Lighting pole inspection:
+  Same ECNDT paper; PDF pages 6–8;
+  Figure 4 (PDF page 6), Figure 5 (PDF page 7).
+  DOI: https://doi.org/10.58286/33178
+  Use PDF page positions for this paper; inner pages do not print page numbers.
+
+Corrosion inspection beneath pipe supports:
+  Original GNDE-supplied presentation, slide 1 of 2,
+  Pipe Supports: Axial and Circumferential Scans.
+  Original PPTX and unchanged source images included.
+  This source uses an eleven-segment bracelet and an 8x8 circumferential array.
+  No independently verified proceedings publication is claimed.
+
+Elevated-temperature monitoring:
+  QNDE2019-1234; pages 2–3; Figures 1 and 2 on page 2.
+  Source PDF remains linked at the original conference repository:
+  https://iastatedigitalpress.com/qnde/article/8539/galley/8023/download/
+  The source is a laboratory FeCo study, not qualification of the current
+  clamp-on pipe sensor. The product temperature specification is unchanged.
+
+PUBLICATION FILES
+The Sensors and ECNDT PDFs are unmodified and licensed CC BY 4.0.
+Each associated page includes the full citation, source link, license link,
+exact page references, and a link opening the PDF at its relevant starting page.
+The QNDE paper is linked externally; it is not redistributed in this archive.
+
+SOURCE ITEMS STILL TO ASSIGN
+- The existing buried anchor-rod case remains based on the supplied slide
+  GWT of Buried Anchors using MsTs. Its publication and page/slide number
+  remain to be assigned. The ECNDT paper contains no separate anchor-rod case.
+- Heat-exchanger tube inspection, four-segment TFM tube inspection, fully
+  rigid permanent sensor, and pressure-vessel monitoring have clearly labelled
+  pages awaiting selected case-study sources.
+
+VALIDATION
+- npm run build completed successfully.
+- Checked all 20 changed/new HTML files, 343 local link/asset references,
+  local target IDs, PDF page ranges, button counts, and gallery image counts.
+- Main case-study list and representative detail page visually checked.
+
+FILES IN THIS UPDATE
+  case-study-buried-anchor-rods.html
+  index.html
+  public/buried-monopoles-anchors.html
+  public/case-studies.css
+  public/case-study-buried-anchor-rods.html
+  public/case-study-buried-monopoles.html
+  public/case-study-heat-exchanger-tfm.html
+  public/case-study-heat-exchanger-tubing.html
+  public/case-study-lighting-poles.html
+  public/case-study-pipe-supports.html
+  public/case-study-pipeline-inspection.html
+  public/case-study-shm-elevated-temperature.html
+  public/case-study-shm-permanent-sensor.html
+  public/case-study-shm-pressure-vessels.html
+  public/case-study-storage-tank-bottoms.html
+  public/case-study-storage-tank-walls.html
+  public/documents/README.txt
+  public/documents/ecndt-2026-431.pdf
+  public/documents/pipe-supports-asnt-source.pptx
+  public/documents/sensors-2026-26-1253.pdf
+  public/heat-exchangers.html
+  public/media/pipe-support-case-study/axial-circumferential-installation.jpg
+  public/media/pipe-support-case-study/axial-circumferential-results.jpg
+  public/pipelines.html
+  public/products.html
+  public/storage-tanks.html
+  public/structural-health-monitoring.html
