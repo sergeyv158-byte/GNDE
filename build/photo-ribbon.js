@@ -40,7 +40,7 @@ export function photoRibbonPlugin() {
         ${segment(279, 558, 'Partial-coverage bracelet on a pipe. View the 11-segment bracelet probe.', duplicate, pipelines + '#eleven-segment-bracelet')}
         ${segment(558, 720, 'Bracelet wrapped around a pipe. View the nine-segment bracelet probe.', duplicate, pipelines + '#nine-segment-bracelet')}
         ${segment(720, 1606, 'High-temperature pipe probe, heat exchanger inspection, field testing, and tank wall inspection.', duplicate)}
-        ${segment(1606, 1768, 'Plate probes mounted on a flat steel anchor. View the buried flat-anchor case study.', duplicate, anchors + '#flat-anchor')}
+        ${segment(1606, 1768, 'Plate probes mounted on a flat steel anchor. View the buried flat-anchor case study.', duplicate, '/case-study-buried-monopoles.html#h-shaped-anchor')}
         ${segment(1768, 1925, 'Probe installed on an anchor rod at the ground line. View the buried anchor rod case study.', duplicate, anchors)}
         ${segment(1925, 2237, 'Underwater inspection equipment.', duplicate)}
         ${original('/media/steel-rope-low-profile-probe.webp', 'Low-profile probe on a steel rope. Read about permanent monitoring.', duplicate, '/case-study-steel-rope.html#low-profile-monitoring', 'width="847" height="776"')}
