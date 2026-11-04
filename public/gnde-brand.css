@@ -49,3 +49,71 @@
   .gnde-brand svg { width: 68px; height: 50px; }
   .gnde-brand-text strong { font-size: 17px; }
 }
+
+/* Main navigation shared by the homepage, product pages, and case studies. */
+.gnde-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: auto;
+  padding: 0;
+  color: #e9f1f7;
+  background: #061427;
+  border-bottom: 1px solid #29425c;
+}
+.gnde-header-inner {
+  box-sizing: border-box;
+  max-width: 1190px;
+  min-height: 73px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.gnde-main-nav {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  font: 650 16px/1.65 "Segoe UI", Arial, sans-serif;
+  letter-spacing: .25px;
+}
+.gnde-main-nav a { color: #e9f1f7; text-decoration: none; }
+.gnde-main-nav a:hover, .gnde-main-nav a:focus-visible { color: #edcd75; }
+.gnde-main-nav a:focus-visible, .gnde-menu-button:focus-visible {
+  outline: 2px solid #f88347;
+  outline-offset: 3px;
+}
+.gnde-menu-button { display: none; }
+html:has(.gnde-header) { scroll-padding-top: 74px; }
+@media (max-width: 800px) {
+  .gnde-header-inner { min-height: 65px; padding: 0 20px; flex-wrap: wrap; gap: 0 8px; }
+  .gnde-main-nav { width: 100%; gap: 0; flex-direction: column; align-items: stretch; padding: 8px 0; }
+  .gnde-main-nav a { padding: 8px 0; }
+  .gnde-menu-button:not([hidden]) {
+    display: block;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #47617b;
+    border-radius: 3px;
+    font: 22px/1 sans-serif;
+    cursor: pointer;
+  }
+  .gnde-menu-button:not([hidden]) + .gnde-main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    background: #061427;
+    border-bottom: 1px solid #29425c;
+    max-height: calc(100dvh - 66px);
+    overflow-y: auto;
+  }
+  .gnde-menu-button:not([hidden])[aria-expanded="false"] + .gnde-main-nav { display: none; }
+  html:has(.gnde-header) { scroll-padding-top: 66px; }
+}
+@media print { .gnde-header { display: none; } }
