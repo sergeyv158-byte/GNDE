@@ -17,5 +17,7 @@
 .gnde-photo-controls button:focus-visible,.gnde-photo-window:focus-visible{outline:2px solid #edcd75;outline-offset:-2px}
 @media(max-width:680px){.gnde-photo-ribbon{--photo-height:136px;padding:12px 20px}.gnde-photo-controls button{min-height:40px;min-width:40px}}
 
-.gnde-rope-link{display:block;height:100%}
-.gnde-rope-link:focus-visible{outline:3px solid #edcd75;outline-offset:-3px}
+.gnde-ribbon-link{display:block;height:100%}
+.gnde-photo-segment .gnde-ribbon-link{position:relative;width:calc(100% - var(--photo-height) * .06);overflow:hidden}
+.gnde-ribbon-link:focus-visible{outline:3px solid #edcd75;outline-offset:-3px;position:relative}
+.gnde-ribbon-link:focus-visible::after{content:"";position:absolute;inset:0;border:3px solid #edcd75;pointer-events:none}
