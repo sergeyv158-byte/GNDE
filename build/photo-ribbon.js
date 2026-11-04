@@ -17,14 +17,19 @@ export function photoRibbonPlugin() {
   }
   const newProbe = readFileSync(new URL('../OMB03096 300.jpg', import.meta.url));
   // Atlas coordinates include each complete retained photograph and its gap.
-  // 0..2467: photos 1-11; 2467..2752: old photo 12; 2752..3977: photos 13-16.
+  // 0..2237: photos 1–10; 2237..2467: rope photo; 2467..2752: old photo 12; 2752..3977: photos 13–16.
   const segment = (start, width, alt) => `
         <div class="gnde-photo-segment" style="--segment-ratio:${width / 200};--atlas-offset:${-start / 200}">
           <img class="gnde-photo-atlas" src="/photo-ribbon.avif" width="4256" height="200" alt="${alt}" draggable="false">
         </div>`;
   const group = (duplicate) => `
       <div class="gnde-photo-strip"${duplicate ? ' aria-hidden="true"' : ''}>
-        ${segment(0, 2467, duplicate ? '' : 'GNDE tank inspection with guided-wave rings, pipe installations, sensor arrays, heat exchanger inspection, field testing, tank wall inspection, anchor monitoring, underwater inspection, and wire rope monitoring.')}
+        ${segment(0, 2237, duplicate ? '' : 'GNDE tank inspection with guided-wave rings, pipe installations, sensor arrays, heat exchanger inspection, field testing, tank wall inspection, anchor monitoring, and underwater inspection.')}
+        <div class="gnde-photo-frame">
+          <a class="gnde-rope-link" href="/case-study-steel-rope.html#low-profile-monitoring"${duplicate ? ' tabindex="-1"' : ''}>
+            <img class="gnde-photo-original" src="/media/steel-rope-low-profile-probe.webp" width="847" height="776" alt="Low-profile probe on a steel rope. Read about permanent monitoring." draggable="false">
+          </a>
+        </div>
         <div class="gnde-photo-frame">
           <img class="gnde-photo-original" src="/photo-ribbon-bracelet.jpg" width="1358" height="861" alt="${duplicate ? '' : 'Black magnetostrictive sensor bracelet on a brown pipe, with the inspection instrument beside it.'}" draggable="false">
         </div>

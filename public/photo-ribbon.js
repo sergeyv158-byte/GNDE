@@ -55,8 +55,8 @@
   viewport.addEventListener('pointerdown', (event) => {
     if (event.pointerType !== 'mouse') { paused = true; updateButton(); }
   });
-  viewport.addEventListener('focus', () => { focused = true; });
-  viewport.addEventListener('blur', () => { focused = false; });
+  viewport.addEventListener('focusin', () => { focused = true; });
+  viewport.addEventListener('focusout', (event) => { focused = viewport.contains(event.relatedTarget); });
   viewport.addEventListener('keydown', (event) => {
     if (!['ArrowLeft', 'ArrowRight', ' '].includes(event.key)) return;
     event.preventDefault();

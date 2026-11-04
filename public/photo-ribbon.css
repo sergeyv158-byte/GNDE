@@ -16,3 +16,6 @@
 .gnde-photo-controls button:hover{border-color:#edcd75;color:#edcd75}
 .gnde-photo-controls button:focus-visible,.gnde-photo-window:focus-visible{outline:2px solid #edcd75;outline-offset:-2px}
 @media(max-width:680px){.gnde-photo-ribbon{--photo-height:136px;padding:12px 20px}.gnde-photo-controls button{min-height:40px;min-width:40px}}
+
+.gnde-rope-link{display:block;height:100%}
+.gnde-rope-link:focus-visible{outline:3px solid #edcd75;outline-offset:-3px}
