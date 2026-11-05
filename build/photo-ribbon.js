@@ -40,10 +40,12 @@ export function photoRibbonPlugin() {
         ${segment(279, 558, 'Partial-coverage bracelet on a pipe. View the 11-segment bracelet probe.', duplicate, pipelines + '#eleven-segment-bracelet')}
         ${segment(558, 720, 'Bracelet wrapped around a pipe. View the nine-segment bracelet probe.', duplicate, pipelines + '#nine-segment-bracelet')}
         ${segment(720, 999, 'High-temperature probe mounted on a vertical pipe. View the elevated-temperature pipe monitoring case study.', duplicate, '/case-study-shm-elevated-temperature.html')}
-        ${segment(999, 1606, 'Heat exchanger inspection, field testing, and tank wall inspection.', duplicate)}
+        ${segment(999, 1282, 'Probe at a heat exchanger tubesheet. View the heat exchanger inspection case study.', duplicate, '/case-study-heat-exchanger-tubing.html')}
+        ${segment(1282, 1444, 'Probe and field computer on an exposed section of buried pipe. View the buried pipe inspection case.', duplicate, '/case-study-pipeline-inspection.html#buried-pipe')}
+        ${segment(1444, 1606, 'Technician in a yellow jacket mounting the MsT 360 probe on a tank wall. View the storage tank wall corrosion screen.', duplicate, mst360)}
         ${segment(1606, 1768, 'Plate probes mounted on a flat steel anchor. View the buried flat-anchor case study.', duplicate, '/case-study-buried-monopoles.html#h-shaped-anchor')}
         ${segment(1768, 1925, 'Probe installed on an anchor rod at the ground line. View the buried anchor rod case study.', duplicate, anchors)}
-        ${segment(1925, 2237, 'Underwater inspection equipment.', duplicate)}
+        ${segment(1925, 2237, 'Underwater probe beside a submerged pipe. View the underwater pipe inspection case study.', duplicate, '/case-study-underwater-pipe-inspection.html')}
         ${original('/media/steel-rope-low-profile-probe.webp', 'Low-profile probe on a steel rope. Read about permanent monitoring.', duplicate, '/case-study-steel-rope.html#low-profile-monitoring', 'width="847" height="776"')}
         ${original('/photo-ribbon-bracelet.jpg', 'Bracelet probe mounted on a pipe. View the pipeline bracelet probes.', duplicate, pipelines + '#bracelet-installation', 'width="1358" height="861"')}
         ${segment(2752, 3031, 'Split-ring probes for anchor rods. View the buried anchor rod case study.', duplicate, anchors)}
