@@ -39,7 +39,8 @@ export function photoRibbonPlugin() {
         ${segment(0, 279, 'Guided waves spreading across a tank head. View the MsT 360 case study.', duplicate, mst360)}
         ${segment(279, 558, 'Partial-coverage bracelet on a pipe. View the 11-segment bracelet probe.', duplicate, pipelines + '#eleven-segment-bracelet')}
         ${segment(558, 720, 'Bracelet wrapped around a pipe. View the nine-segment bracelet probe.', duplicate, pipelines + '#nine-segment-bracelet')}
-        ${segment(720, 1606, 'High-temperature pipe probe, heat exchanger inspection, field testing, and tank wall inspection.', duplicate)}
+        ${segment(720, 999, 'High-temperature probe mounted on a vertical pipe. View the elevated-temperature pipe monitoring case study.', duplicate, '/case-study-shm-elevated-temperature.html')}
+        ${segment(999, 1606, 'Heat exchanger inspection, field testing, and tank wall inspection.', duplicate)}
         ${segment(1606, 1768, 'Plate probes mounted on a flat steel anchor. View the buried flat-anchor case study.', duplicate, '/case-study-buried-monopoles.html#h-shaped-anchor')}
         ${segment(1768, 1925, 'Probe installed on an anchor rod at the ground line. View the buried anchor rod case study.', duplicate, anchors)}
         ${segment(1925, 2237, 'Underwater inspection equipment.', duplicate)}
