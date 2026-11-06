@@ -36,7 +36,7 @@ export function photoRibbonPlugin() {
   };
   const group = (duplicate) => `
       <div class="gnde-photo-strip"${duplicate ? ' aria-hidden="true"' : ''}>
-        ${segment(0, 279, 'Guided waves spreading across a tank head. View the MsT 360 case study.', duplicate, mst360)}
+        ${segment(0, 279, 'Omnidirectional MsT probe mounted on a storage tank cap. View the pressure vessel monitoring case study.', duplicate, '/case-study-shm-pressure-vessels.html')}
         ${segment(279, 558, 'Partial-coverage bracelet on a pipe. View the 11-segment bracelet probe.', duplicate, pipelines + '#eleven-segment-bracelet')}
         ${segment(558, 720, 'Bracelet wrapped around a pipe. View the nine-segment bracelet probe.', duplicate, pipelines + '#nine-segment-bracelet')}
         ${segment(720, 999, 'High-temperature probe mounted on a vertical pipe. View the elevated-temperature pipe monitoring case study.', duplicate, '/case-study-shm-elevated-temperature.html')}
