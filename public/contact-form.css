@@ -1,0 +1,128 @@
+#contact .contact-form {
+  max-width: 900px;
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0b2646;
+}
+
+#contact .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 24px;
+}
+
+#contact .contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+#contact .contact-field-wide {
+  grid-column: 1 / -1;
+}
+
+#contact label {
+  color: var(--text);
+  font-weight: 650;
+}
+
+#contact label span,
+#contact .contact-help {
+  color: #afc2d0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #7896ad;
+  border-radius: 4px;
+  background: #f4f8fb;
+  color: #142d46;
+  font: inherit;
+  line-height: 1.5;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #586d7e;
+  opacity: 1;
+}
+
+#contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+#contact input:focus-visible,
+#contact select:focus-visible,
+#contact textarea:focus-visible,
+#contact button:focus-visible,
+#contact a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+#contact .contact-help {
+  margin: 0;
+}
+
+#contact .contact-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+#contact button {
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#contact .contact-email {
+  display: inline-block;
+  margin-top: 22px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+#contact .contact-preview {
+  max-width: 900px;
+  margin-top: 24px;
+}
+
+#contact .contact-preview textarea {
+  margin: 8px 0 14px;
+  min-height: 240px;
+}
+
+#contact .contact-status {
+  color: var(--gold);
+  margin-top: 18px;
+}
+
+@media (max-width: 640px) {
+  #contact .contact-form {
+    padding: 20px 16px;
+  }
+
+  #contact .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #contact .contact-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
