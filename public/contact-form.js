@@ -22,6 +22,13 @@
     status.textContent = '';
   });
 
+  form.addEventListener('reset', () => {
+    preview.hidden = true;
+    enquiryText.value = '';
+    status.textContent = 'Form cleared.';
+    form.elements.namedItem('company').focus();
+  });
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
