@@ -12,18 +12,12 @@
     ['contactName', 'Contact name'],
     ['email', 'Email'],
     ['phone', 'Phone'],
-    ['requestType', 'Enquiry type'],
-    ['application', 'Component or application'],
-    ['geometry', 'Material and dimensions'],
-    ['temperature', 'Operating temperature'],
-    ['access', 'Access restrictions'],
-    ['details', 'Application details and inspection goals'],
+    ['details', 'Application details'],
   ];
 
   form.hidden = false;
 
-  form.addEventListener('input', (event) => {
-    event.target.setCustomValidity('');
+  form.addEventListener('input', () => {
     preview.hidden = true;
     status.textContent = '';
   });
@@ -31,18 +25,13 @@
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    for (const field of form.querySelectorAll('[required]')) {
-      field.setCustomValidity(field.value.trim() ? '' : 'Please complete this field.');
-    }
-    if (!form.reportValidity()) return;
-
     const data = new FormData(form);
-    const subject = `GNDE ${data.get('requestType')} — ${data.get('company').trim()}`
+    const subject = ['GNDE enquiry', data.get('company').trim()].filter(Boolean).join(' — ')
       .replace(/[\r\n]/g, ' ');
     const body = fields.map(([name, label]) => {
       const value = data.get(name).trim();
-      return `${label}: ${value || 'Not specified'}`;
-    }).join('\r\n\r\n');
+      return value ? `${label}: ${value}` : '';
+    }).filter(Boolean).join('\r\n\r\n');
 
     enquiryText.value = `To: ${recipient}\nSubject: ${subject}\n\n${body}`;
     preview.hidden = false;

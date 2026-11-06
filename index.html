@@ -179,52 +179,28 @@ Your browser does not support WebM video.
   <div class="wrap">
     <p class="kicker">Contact</p>
     <h2>Request a quotation or ask about a custom application</h2>
-    <p class="intro">Tell us about your inspection requirements. Fields marked * are required.</p>
+    <p class="intro">All fields are optional. Share the details you would like us to review.</p>
     <form id="contact-enquiry" class="contact-form" data-recipient="mail@guided-nde.com" aria-label="Quotation and custom application enquiry" aria-describedby="contact-email-help" hidden>
       <div class="contact-grid">
         <div class="contact-field">
-          <label for="contact-company">Company name *</label>
-          <input id="contact-company" name="company" autocomplete="organization" maxlength="120" required>
+          <label for="contact-company">Company name</label>
+          <input id="contact-company" name="company" autocomplete="organization" maxlength="120">
         </div>
         <div class="contact-field">
-          <label for="contact-name">Contact name *</label>
-          <input id="contact-name" name="contactName" autocomplete="name" maxlength="120" required>
+          <label for="contact-name">Contact name</label>
+          <input id="contact-name" name="contactName" autocomplete="name" maxlength="120">
         </div>
         <div class="contact-field">
-          <label for="contact-email">Email address *</label>
-          <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          <label for="contact-email">Email address</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254">
         </div>
         <div class="contact-field">
-          <label for="contact-phone">Phone number <span>(optional)</span></label>
+          <label for="contact-phone">Phone number</label>
           <input id="contact-phone" name="phone" type="tel" autocomplete="tel" maxlength="60">
         </div>
-        <div class="contact-field">
-          <label for="contact-type">Enquiry type *</label>
-          <select id="contact-type" name="requestType" required>
-            <option value="">Select an enquiry type</option>
-            <option value="quotation request">Request a quotation</option>
-            <option value="custom application enquiry">Discuss a custom application</option>
-          </select>
-        </div>
-        <div class="contact-field">
-          <label for="contact-application">Component or application <span>(optional)</span></label>
-          <input id="contact-application" name="application" maxlength="120" placeholder="e.g., pipeline, storage tank, heat exchanger">
-        </div>
-        <div class="contact-field">
-          <label for="contact-geometry">Material and dimensions <span>(optional)</span></label>
-          <input id="contact-geometry" name="geometry" maxlength="240" placeholder="Material, diameter, wall thickness or rope size">
-        </div>
-        <div class="contact-field">
-          <label for="contact-temperature">Operating temperature <span>(optional)</span></label>
-          <input id="contact-temperature" name="temperature" maxlength="80" placeholder="Temperature or range, including °C or °F">
-        </div>
         <div class="contact-field contact-field-wide">
-          <label for="contact-access">Access restrictions <span>(optional)</span></label>
-          <input id="contact-access" name="access" maxlength="300" placeholder="e.g., buried section, insulation, one-sided access">
-        </div>
-        <div class="contact-field contact-field-wide">
-          <label for="contact-details">Application details and inspection goals *</label>
-          <textarea id="contact-details" name="details" rows="5" maxlength="1500" placeholder="Describe what you need to inspect or monitor, the defects of interest, quantities and your required timeframe." required></textarea>
+          <label for="contact-details">Application details</label>
+          <textarea id="contact-details" name="details" rows="5" maxlength="1500" placeholder="Describe your application or question."></textarea>
         </div>
       </div>
       <div class="contact-actions">
