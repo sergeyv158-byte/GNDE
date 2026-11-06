@@ -49,7 +49,7 @@ export function photoRibbonPlugin() {
         ${original('/media/steel-rope-low-profile-probe.webp', 'Low-profile probe on a steel rope. Read about permanent monitoring.', duplicate, '/case-study-steel-rope.html#low-profile-monitoring', 'width="847" height="776"')}
         ${original('/photo-ribbon-bracelet.jpg', 'Bracelet probe mounted on a pipe. View the pipeline bracelet probes.', duplicate, pipelines + '#bracelet-installation', 'width="1358" height="861"')}
         ${segment(2752, 3031, 'Split-ring probes for anchor rods. View the buried anchor rod case study.', duplicate, anchors)}
-        ${segment(3031, 3399, 'Inspection probe with long clamp arms.', duplicate)}
+        ${segment(3031, 3399, 'Claw-type MsT probe. View small-diameter tubing inspection from the outside diameter.', duplicate, '/heat-exchangers.html#small-diameter-tubing-od')}
         ${segment(3399, 3698, 'Orange pipe monitoring probe. View SHM probes for aboveground and buried piping.', duplicate, '/structural-health-monitoring.html#aboveground-buried-pipes')}
         ${segment(3698, 3977, 'Probe mounted at the tank bottom. View the storage tank bottom case study.', duplicate, '/case-study-storage-tank-bottoms.html')}
         ${original('/photo-ribbon-new-probe.jpg', 'MsT 360 rotating probe. View the tank wall inspection case study.', duplicate, mst360, 'width="1937" height="1296"')}
