@@ -22,5 +22,12 @@
 .gnde-ribbon-link:focus-visible{outline:3px solid #edcd75;outline-offset:-3px;position:relative}
 .gnde-ribbon-link:focus-visible::after{content:"";position:absolute;inset:0;border:3px solid #edcd75;pointer-events:none}
 
-/* Show the flat-sensor panel from the current concept image in the ribbon. */
-.gnde-photo-ribbon img[src="/media/vibration-magnetostrictive-sensor-collar.webp"]{width:calc(var(--photo-height) * 2.866);height:100%;object-fit:cover;object-position:center top}
+/* Display each complete view from the approved concept as its own ribbon panel. */
+.gnde-sensor-panel{position:relative;display:block;height:100%;overflow:hidden}
+.gnde-sensor-panel img{position:absolute;display:block;max-width:none;user-select:none;-webkit-user-drag:none}
+.gnde-sensor-flat{width:calc(var(--photo-height) * 2.871028)}
+.gnde-sensor-flat img{width:calc(var(--photo-height) * 2.871028);height:calc(var(--photo-height) * 1.914019);left:0;top:0}
+.gnde-sensor-flex{width:calc(var(--photo-height) * 1.696281)}
+.gnde-sensor-flex img{width:calc(var(--photo-height) * 3.173554);height:calc(var(--photo-height) * 2.115702);left:0;top:calc(var(--photo-height) * -1.115702)}
+.gnde-sensor-collar{width:calc(var(--photo-height) * 1.464876)}
+.gnde-sensor-collar img{width:calc(var(--photo-height) * 3.173554);height:calc(var(--photo-height) * 2.115702);left:calc(var(--photo-height) * -1.708678);top:calc(var(--photo-height) * -1.115702)}
