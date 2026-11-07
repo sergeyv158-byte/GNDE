@@ -46,7 +46,6 @@ export function photoRibbonPlugin() {
         ${segment(720, 999, 'High-temperature probe mounted on a vertical pipe. View the elevated-temperature pipe monitoring case study.', duplicate, '/case-study-shm-elevated-temperature.html')}
         ${segment(999, 1282, 'Probe at a heat exchanger tubesheet. View the heat exchanger inspection case study.', duplicate, '/case-study-heat-exchanger-tubing.html')}
         ${segment(1282, 1444, 'Probe and field computer on an exposed section of buried pipe. View the buried pipe inspection case.', duplicate, '/case-study-pipeline-inspection.html#buried-pipe')}
-        ${sensorView('flat', 'Flat magnetostrictive sensor strip with side-exit leads. View the sensor case study.', duplicate)}
         ${sensorView('flex', 'Flexible magnetostrictive sensor strip shown bending into an arc. View the sensor case study.', duplicate)}
         ${sensorView('collar', 'Multiple magnetostrictive sensor elements arranged around a large pipe as a segmented collar. View the sensor case study.', duplicate)}
         ${segment(1606, 1768, 'Plate probes mounted on a flat steel anchor. View the buried flat-anchor case study.', duplicate, '/case-study-buried-monopoles.html#h-shaped-anchor')}
@@ -62,7 +61,7 @@ export function photoRibbonPlugin() {
         ${original('/D026693-magnetostrictive-sensor-reflectometer-02.jpg', 'Magnetostrictive guided-wave inspection instrument with laptop.', duplicate)}
       </div>`;
   const markup = `
-<div class="gnde-photo-ribbon" id="inspection-photos" role="region" aria-label="GNDE inspection and sensor photographs" data-photo-count="20">
+<div class="gnde-photo-ribbon" id="inspection-photos" role="region" aria-label="GNDE inspection and sensor photographs" data-photo-count="19">
   <div class="gnde-photo-window" tabindex="0" aria-label="Scrolling inspection photos. Use arrow keys or swipe to browse.">
     <div class="gnde-photo-track">${group(true)}${group(false)}${group(true)}
     </div>
