@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gnde.vercel.app/sitemap.xml
+Sitemap: https://guided-nde.com/sitemap.xml
