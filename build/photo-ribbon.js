@@ -42,7 +42,7 @@ export function photoRibbonPlugin() {
         ${segment(720, 999, 'High-temperature probe mounted on a vertical pipe. View the elevated-temperature pipe monitoring case study.', duplicate, '/case-study-shm-elevated-temperature.html')}
         ${segment(999, 1282, 'Probe at a heat exchanger tubesheet. View the heat exchanger inspection case study.', duplicate, '/case-study-heat-exchanger-tubing.html')}
         ${segment(1282, 1444, 'Probe and field computer on an exposed section of buried pipe. View the buried pipe inspection case.', duplicate, '/case-study-pipeline-inspection.html#buried-pipe')}
-        ${original('/media/vibration-magnetostrictive-sensor-collar.webp', 'Vibration magnetostrictive sensor concept shown flat, flexed, and arranged as a segmented collar around a larger pipe. View the sensor specifications.', duplicate, '/products.html#vibration-magnetostrictive-sensor', 'width="1536" height="1024"')}
+        ${original('/media/vibration-magnetostrictive-sensor-collar.webp', 'Flat vibration magnetostrictive sensor concept with side-exit leads near each end. View the full image and sensor specifications.', duplicate, '/products.html#vibration-magnetostrictive-sensor', 'width="1536" height="1024"')}
         ${segment(1606, 1768, 'Plate probes mounted on a flat steel anchor. View the buried flat-anchor case study.', duplicate, '/case-study-buried-monopoles.html#h-shaped-anchor')}
         ${segment(1768, 1925, 'Probe installed on an anchor rod at the ground line. View the buried anchor rod case study.', duplicate, anchors)}
         ${segment(1925, 2237, 'Underwater probe beside a submerged pipe. View the underwater pipe inspection case study.', duplicate, '/case-study-underwater-pipe-inspection.html')}

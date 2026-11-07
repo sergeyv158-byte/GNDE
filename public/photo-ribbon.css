@@ -21,3 +21,6 @@
 .gnde-photo-segment .gnde-ribbon-link{position:relative;width:calc(100% - var(--photo-height) * .06);overflow:hidden}
 .gnde-ribbon-link:focus-visible{outline:3px solid #edcd75;outline-offset:-3px;position:relative}
 .gnde-ribbon-link:focus-visible::after{content:"";position:absolute;inset:0;border:3px solid #edcd75;pointer-events:none}
+
+/* Show the flat-sensor panel from the current concept image in the ribbon. */
+.gnde-photo-ribbon img[src="/media/vibration-magnetostrictive-sensor-collar.webp"]{width:calc(var(--photo-height) * 2.866);height:100%;object-fit:cover;object-position:center top}
