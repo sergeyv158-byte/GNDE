@@ -117,3 +117,48 @@ html:has(.gnde-header) { scroll-padding-top: 74px; }
   html:has(.gnde-header) { scroll-padding-top: 66px; }
 }
 @media print { .gnde-header { display: none; } }
+
+/* Static footer navigation shared by all main pages. */
+.gnde-footer {
+  box-sizing: border-box;
+  display: block;
+  position: static;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+  border-top: 1px solid #29425c;
+  background: #040e1e;
+  color: #b8c9d8;
+  font: 400 14px/1.65 "Segoe UI", Arial, sans-serif;
+}
+.gnde-footer-inner {
+  box-sizing: border-box;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 32px;
+}
+.gnde-footer .gnde-footer-brand { margin: 0; color: #b8c9d8; }
+.gnde-footer-brand strong { display: block; color: #fff; font-size: 17px; }
+.gnde-footer-brand span { display: block; }
+.gnde-footer-links { text-align: right; }
+.gnde-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0 18px;
+}
+.gnde-footer a { color: #e9f1f7; text-decoration: none; }
+.gnde-footer-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.gnde-footer .gnde-footer-email { display: inline-flex; align-items: center; min-height: 44px; color: #edcd75; }
+.gnde-footer a:hover { color: #edcd75; text-decoration: underline; text-underline-offset: 3px; }
+.gnde-footer a:focus-visible { outline: 2px solid #f88347; outline-offset: 4px; }
+@media (max-width: 800px) {
+  .gnde-footer-inner { padding: 0 20px; flex-direction: column; align-items: flex-start; gap: 14px; }
+  .gnde-footer-links { text-align: left; }
+  .gnde-footer-nav { justify-content: flex-start; }
+}
