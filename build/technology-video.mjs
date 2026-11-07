@@ -29,6 +29,7 @@ Your browser cannot play this video. <a href="/${displayFileName}">Open the MP4 
     transformIndexHtml: {
       order: 'pre',
       handler(html) {
+        if (!html.includes('class="wiedemann-animation"') && !html.includes('id="feco-wave-animation"')) return html;
         if (html.includes('id="feco-wave-animation"')) return html;
         // The approved page now embeds the video directly; keep that markup
         // and point it to the verified MP4 emitted below.
@@ -85,3 +86,4 @@ Your browser cannot play this video. <a href="/${displayFileName}">Open the MP4 
     },
   };
 }
+

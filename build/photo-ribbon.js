@@ -72,6 +72,7 @@ export function photoRibbonPlugin() {
     transformIndexHtml: {
       order: 'pre',
       handler(html) {
+        if (!html.includes('id="home"')) return html;
         if (html.includes('id="inspection-photos"')) return html;
         const hero = /(<section\b[^>]*\bid=["']home["'][^>]*>[\s\S]*?<\/section>)/i;
         if (!hero.test(html)) throw new Error('Cannot find the homepage hero for photo ribbon placement.');
@@ -109,3 +110,4 @@ export function photoRibbonPlugin() {
     },
   };
 }
+

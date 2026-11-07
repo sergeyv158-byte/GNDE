@@ -16,6 +16,11 @@
   ];
 
   form.hidden = false;
+  const requiredFields = ['company', 'contactName', 'email'];
+  requiredFields.forEach(name => {
+    const field = form.elements.namedItem(name);
+    field.addEventListener('input', () => field.setCustomValidity(''));
+  });
 
   form.addEventListener('input', () => {
     preview.hidden = true;
@@ -26,11 +31,18 @@
     preview.hidden = true;
     enquiryText.value = '';
     status.textContent = 'Form cleared.';
+    requiredFields.forEach(name => form.elements.namedItem(name).setCustomValidity(''));
     form.elements.namedItem('company').focus();
   });
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    requiredFields.forEach(name => {
+      const field = form.elements.namedItem(name);
+      field.setCustomValidity(field.value.trim() ? '' : 'Please complete this field.');
+    });
+    if (!form.reportValidity()) return;
 
     const data = new FormData(form);
     const subject = ['GNDE enquiry', data.get('company').trim()].filter(Boolean).join(' — ')
@@ -57,3 +69,4 @@
     }
   });
 })();
+
