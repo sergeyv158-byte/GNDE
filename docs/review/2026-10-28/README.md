@@ -26,7 +26,7 @@ Deploy only as a Vercel preview from the existing review branch. This update doe
 
 ## Requested branding and comment cleanup
 
-All served page headers now use the original homepage orange pulse waveform, “Guided NDE LLC” wordmark, and “SINCE 2008” line. The shared `public/gnde-brand.css` controls the same desktop and mobile logo dimensions across pages. Brown editorial review comments and draft/publication badges were removed at the owner's request. Technical specifications, source/manufacturer credits, interpretation limits, and the original photographs are retained. Historical source snapshots above remain unchanged.
+All served page headers now use the original homepage orange pulse waveform and “Guided NDE LLC” wordmark. The shared `public/gnde-brand.css` controls the same desktop and mobile logo dimensions across pages. Brown editorial review comments and draft/publication badges were removed at the owner's request. Technical specifications, source/manufacturer credits, interpretation limits, and the original photographs are retained. Historical source snapshots above remain unchanged.
 
 ## Case Study buttons and editorial labels
 
