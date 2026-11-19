@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function GuidedNDEWebsite() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -438,6 +439,7 @@ export default function GuidedNDEWebsite() {
           </div>
         </footer>
       </div>
+      <Analytics />
     </div>
   );
 }
