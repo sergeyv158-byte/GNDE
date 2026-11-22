@@ -5,6 +5,9 @@ const analyticsMarkup = `<!-- GNDE Web Analytics -->
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>
 `;
+const insightsTag = /<script\b[^>]*\bsrc=["']\/_vercel\/insights\/script\.js["'][^>]*>/i;
+const cityTag = /<script\b[^>]*\bsrc=["']\/api\/visitor-city["'][^>]*>/i;
+const cityScript = '<script defer src="/api/visitor-city"></script>';
 
 // GNDE serves static HTML, including pages copied directly from public/.
 // Inject after writing the build so both Vite entrypoints and copied pages
@@ -19,11 +22,17 @@ export function webAnalyticsPlugin() {
         addAnalytics(path);
       } else if (entry.isFile() && entry.name.endsWith('.html')) {
         const html = readFileSync(path, 'utf8');
-        if (html.includes('src="/_vercel/insights/script.js"')) continue;
-        if (!/<\/head\s*>/i.test(html)) {
-          throw new Error(`Cannot add Web Analytics: missing </head> in ${path}`);
+        let tracked = html;
+        if (!insightsTag.test(tracked)) {
+          if (!/<\/head\s*>/i.test(tracked)) {
+            throw new Error(`Cannot add Web Analytics: missing </head> in ${path}`);
+          }
+          tracked = tracked.replace(/<\/head\s*>/i, `${analyticsMarkup}$&`);
         }
-        writeFileSync(path, html.replace(/<\/head\s*>/i, `${analyticsMarkup}$&`));
+        if (!cityTag.test(tracked)) {
+          tracked = tracked.replace(insightsTag, `${cityScript}\n$&`);
+        }
+        if (tracked !== html) writeFileSync(path, tracked);
       }
     }
   }
